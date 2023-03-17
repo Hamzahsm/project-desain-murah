@@ -57,35 +57,171 @@
 
         <div class="row text-center mt-5">
             <div class="col-lg-4">
-                {{-- <img src="./images/desain-interior.jpg" alt="desain-interior"> --}}
-                <i class="bi bi-house-heart fs-1"></i>
-                <h6>Desain Interior</h6>
+                <div class="border border-2 py-5 rounded shadow">
+                    <a href="#" class="text-decoration-none text-dark">
+                        <i class="bi bi-house-heart fs-1"></i>
+                        <h6>Desain Interior</h6>
+                    </a>
+                    <p>Mari buat desain interior sesuai keinginan untuk rumah mewah dan rumah minimalis.</p>
+                    <a href="#">
+                        <button class="btn btn-success px-3 rounded-5"> <i class="bi bi-whatsapp"></i> Konsultasi GRATIS !</button>
+                    </a>
+                </div>
             </div>
             <div class="col-lg-4">
-                <i class="bi bi-house-gear fs-1"></i>
-                <h6>Desain Eksterior</h6>
+                <div class="border border-2 py-5 rounded shadow">
+                    <a href="#" class="text-decoration-none text-secondary">
+                        <i class="bi bi-house-gear fs-1"></i>
+                        <h6>Desain Eksterior</h6>
+                    </a>
+                    <p>Ciptakan desain eksterior rumah yang terlihat mewah ataupun minimalis untuk menciptakan kesan tertentu.</p>
+                    <a href="#">
+                        <button class="btn btn-success px-3 rounded-5"> <i class="bi bi-whatsapp"></i> Konsultasi GRATIS !</button>
+                    </a>
+                </div>
             </div>
             <div class="col-lg-4">
-                <i class="bi bi-map fs-1"></i>
-                <h6>Denah</h6>
+                <div class="border border-2 py-5 rounded shadow">
+                    <a href="#" class="text-decoration-none text-secondary">
+                        <i class="bi bi-map fs-1"></i>
+                        <h6>Denah</h6>
+                    </a>
+                    <p>Bantu Kontraktor membangun lebih efektif dan efisien dengan membuat denah yang informatif.</p>
+                    <a href="#">
+                        <button class="btn btn-success px-3 rounded-5"> <i class="bi bi-whatsapp"></i> Konsultasi GRATIS !</button>
+                    </a>
+                </div>
             </div>
         </div>
 
         <div class="container mt-5">
             <div class="row text-center">
                 <div class="col-lg-4">
-                    <i class="bi bi-laptop fs-1"></i>
-                    <h6>Desain 2D & 3D</h6>
+                    <div class="border border-2 py-5 rounded shadow">
+                        <a href="#" class="text-decoration-none text-secondary">
+                            <i class="bi bi-laptop fs-1"></i>
+                            <h6>Desain 2D & 3D</h6>
+                        </a>
+                        <p>Model bangunan akan nampak lebih nyata dan lebih mudah dipahami bahkan oleh orang awam sekalipun.</p>
+                        <a href="#">
+                            <button class="btn btn-success px-3 rounded-5"> <i class="bi bi-whatsapp"></i> Konsultasi GRATIS !</button>
+                        </a>
+                    </div>
                 </div>
                 <div class="col-lg-4">
-                    <i class="bi bi-file-earmark-text fs-1"></i>
-                    <h6>Rencana Anggaran Biaya (RAB)</h6>
+                    <div class="border border-2 py-5 rounded shadow">
+                        <a href="#" class="text-decoration-none text-secondary">
+                            <i class="bi bi-file-earmark-text fs-1"></i>
+                            <h6>Rencana Anggaran Biaya (RAB)</h6>
+                        </a>
+                        <p>Membuat Anggaran Pembangunan lebih maksimal, terarah dan terukur.</p>
+                        <a href="#">
+                            <button class="btn btn-success px-3 rounded-5"> <i class="bi bi-whatsapp"></i> Konsultasi GRATIS !</button>
+                        </a>
+                    </div>
                 </div>
                 <div class="col-lg-4">
-                    <i class="bi bi-person-video3 fs-1"></i>
-                    <h6>Custom</h6>
+                    <div class="border border-2 py-5 rounded shadow">
+                        <a href="#" class="text-decoration-none text-secondary">
+                            <i class="bi bi-person-video3 fs-1"></i>
+                            <h6>Custom</h6>
+                        </a>
+                        <p>Ingin melakukan custom order ? Mari sampaikan keiginan Anda melalui WhatsApp dibawah ini</p>
+                        <a href="#">
+                            <button class="btn btn-success px-3 rounded-5"> <i class="bi bi-whatsapp"></i> Konsultasi GRATIS !</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    {{-- Tentang Kami --}}
+    <div class="container mt-5">
+        <div class="text-center mt-5">
+            <h2 class="text-center text-uppercase">Tentang Kami</h2>
+            <p>Desainmurah.id merupakan bagian dari Griya Bangun Studio yang hadir sebagai rekan solusi kebutuhan desain dan arsitek professional dan terpercaya.</p>
+        </div>
+        <div>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      NIB
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">NIB GRIYA BANGUN INDONESIA : 1002220047599</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      NPWP
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">NPWP GRIYA BANGUN INDONESIA : 62.239.319.5-654.000</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      AHU
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">AHU GRIYA BANGUN INDONESIA : AHU-0009656.AH.01.01.TAHUN2022</div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    {{-- harga desain --}}
+    <div class="container mt-5">
+        <h2 class="text-center text-uppercase">Pricelist</h2>
+        <div class="row my-5">
+            <div class="col-lg-3">
+                <div class="border border-2 p-3 rounded shadow">
+                    <h2 class="text-uppercase">Basic</h2>
+                    <hr>
+                    <h4>Rp. 25.000 / m<sup>2</sup></h4>
+                    <p class="mt-3"><i class="bi bi-check-lg fw-bold text-success"></i> Denah</p>
+                    <p class="mt-3"><i class="bi bi-check-lg fw-bold text-success"></i> Tampak</p>
+                    <p class="mt-3"><i class="bi bi-x fw-bold text-danger"></i> Potongan</p>
+                    <p class="mt-3"><i class="bi bi-x fw-bold text-danger"></i> Rencana Pondasi</p>
+                    <p class="mt-3"><i class="bi bi-x fw-bold text-danger"></i> Rencana Atap</p>
+                    <p class="mt-3"><i class="bi bi-x fw-bold text-danger"></i> Rencana Plafon</p>
+                    <p class="mt-3"><i class="bi bi-x fw-bold text-danger"></i> Rencana Balok & Kolom</p>
+                    <p class="mt-3"><i class="bi bi-x fw-bold text-danger"></i> Rencana Titik Lampu</p>
+                    <p class="mt-3"><i class="bi bi-x fw-bold text-danger"></i> Rencana Sanitasi & Drainase</p>
+                    <p class="mt-3"><i class="bi bi-x fw-bold text-danger"></i> Rencana Penulangan & Plat Lantai</p>
+                    <p class="mt-3"><i class="bi bi-x fw-bold text-danger"></i> Desain Struktur dan Arsitektural</p>
+                    <p class="mt-3"><i class="bi bi-x fw-bold text-danger"></i> 3D Desain</p>
+                    <p class="mt-3"><i class="bi bi-x fw-bold text-danger"></i> Rencana Anggaran Biaya (RAB)</p>
+                    <div class="text-center mt-4">
+                        <a href="#">
+                            <button class="btn btn-success px-3 rounded-5"> <i class="bi bi-whatsapp"></i> Konsultasi GRATIS !</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="border border-2 py-5 rounded shadow">
+                    satu
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="border border-2 py-5 rounded shadow">
+                    satu
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="border border-2 py-5 rounded shadow">
+                    satu
                 </div>
             </div>
         </div>
     </div>
+
 @endsection
