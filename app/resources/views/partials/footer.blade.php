@@ -8,25 +8,29 @@
             <a href="cari-produk/?category=dekorasi-rumah" class="nav-link">Dekorasi Rumah</a>
           </div>
           <div class="col-lg-3 text-start">
-            <h6 class="mt-4">PENCARIAN POPULER</h6>
-            <a href="cari-produk/?category=tanah" class="nav-link">Tanah</a>
+            <h6 class="mt-4">LAYANAN JASA</h6>
+            <a href="#" class="nav-link">Desain Rumah Mewah</a>
+            <a href="#" class="nav-link">Desain Rumah Minimalis</a>
+            <a href="#" class="nav-link">Desain Rumah Modern</a>
+            <a href="#" class="nav-link">Desain Gedung Kantor</a>
+            <a href="#" class="nav-link">Desain Kolam Koi</a>
+            <a href="#" class="nav-link">Desain Mall</a>
+            <a href="#" class="nav-link">Custom</a>
+            {{-- <a href="cari-produk/?category=tanah" class="nav-link">Tanah</a>
             <a href="cari-produk/?category=perlengkapan-rumah" class="nav-link">Perlengkapan Rumah</a>
-            <a href="cari-produk/?category=perlengkapan-dapur" class="nav-link">Perlengkapan Dapur</a>
+            <a href="cari-produk/?category=perlengkapan-dapur" class="nav-link">Perlengkapan Dapur</a> --}}
           </div>
           <div class="col-lg-3 text-start">
-            <h6 class="mt-4">BEHOME.ID</h6>
-            <a href="/about" class="nav-link">Tentang Kami</a>
-            <a href="#" class="nav-link">Pusat Bantuan</a>
-            <a href="#" class="nav-link">Kebijakan Privasi</a>
+            <h6 class="mt-4">INFORMASI</h6>
+            <a href="#" class="nav-link">Blog</a>
+            <a href="#" class="nav-link">Harga Desain</a>
+            <a href="#" class="nav-link">Kontak Kami</a>
+            <a href="#" class="nav-link">Portofolio Desain</a>
+            <a href="#" class="nav-link">Tentang Kami</a>
           </div>
           <div class="col-lg-3 text-start">
-            <h6 class="mt-4">IKUTI KAMI</h6>
-            <div class="d-flex">
-              <a href="#" class="nav-link"><i class="fa-brands fa-facebook"></i></a> 
-              <a href="#" class="nav-link mx-3"><i class="fa-brands fa-twitter"></i></a> 
-              <a href="#" class="nav-link"><i class="fa-brands fa-tiktok"></i></a> 
-              <a href="#" class="nav-link ms-3"><i class="fa-brands fa-instagram-square"></i></a> 
-            </div>
+            <h6 class="mt-4">ALAMAT</h6>
+              <a href="#" class="nav-link">Perum Bumi Aura Blok M10 RT 3 RW 7 (Utara Pasar Ngemplak) Kel. Sembung Kec. Tulungagung Kab. Tulungagung</a>
           </div>
         </div>
       </div>  
@@ -35,7 +39,7 @@
 <div class="container mt-3">
     <div class="row">
         <div class="col-lg-6 text-center">
-            <p>@Copyright 2022 behome.id </p>
+            <p>@Copyright 2023 Desainmurah.id</p>
         </div>
         <div class="col-lg-6 text-center">
             <p>Member of ABRIS GROUP</p>
