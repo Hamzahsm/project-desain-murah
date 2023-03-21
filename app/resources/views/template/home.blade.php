@@ -14,10 +14,6 @@
     {{-- header --}}
     @include('partials.header')
 
-    {{-- slider --}}
-
-    @include('partials.slider')
-
     {{-- body  --}}
     @yield('container')
 

@@ -1,6 +1,30 @@
 @extends('template.home')
 
 @section('container')
+
+    {{-- slider --}}
+    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="./images/slider-1.jpg" class="d-block w-100" alt="slider satu">
+        </div>
+        <div class="carousel-item">
+            <img src="./images/slider-2.jpg" class="d-block w-100" alt="slider dua">
+        </div>
+        <div class="carousel-item">
+            <img src="./images/slider-3.jpg" class="d-block w-100" alt="slider tiga">
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
     {{-- statistic --}}
     <div class="container text-center ">
         <h2 class="fw-bold mt-5 fs-1">STATISTIK HINGGA MARET 2023</h2>
@@ -57,8 +81,8 @@
 
         <div class="row text-center mt-5">
             <div class="col-lg-4">
-                <div class="border border-2 py-5 rounded shadow">
-                    <a href="#" class="text-decoration-none text-dark">
+                <div class="border border-2 py-5 rounded shadow bg-body-secondary bg-gradient">
+                    <a href="#" class="text-decoration-none text-secondary">
                         <i class="bi bi-house-heart fs-1"></i>
                         <h6>Desain Interior</h6>
                     </a>
@@ -69,7 +93,7 @@
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="border border-2 py-5 rounded shadow">
+                <div class="border border-2 py-5 rounded shadow bg-body-secondary bg-gradient">
                     <a href="#" class="text-decoration-none text-secondary">
                         <i class="bi bi-house-gear fs-1"></i>
                         <h6>Desain Eksterior</h6>
@@ -81,7 +105,7 @@
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="border border-2 py-5 rounded shadow">
+                <div class="border border-2 py-5 rounded shadow bg-body-secondary bg-gradient">
                     <a href="#" class="text-decoration-none text-secondary">
                         <i class="bi bi-map fs-1"></i>
                         <h6>Denah</h6>
@@ -97,7 +121,7 @@
         <div class="container mt-5">
             <div class="row text-center">
                 <div class="col-lg-4">
-                    <div class="border border-2 py-5 rounded shadow">
+                    <div class="border border-2 py-5 rounded shadow bg-body-secondary bg-gradient">
                         <a href="#" class="text-decoration-none text-secondary">
                             <i class="bi bi-laptop fs-1"></i>
                             <h6>Desain 2D & 3D</h6>
@@ -109,7 +133,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="border border-2 py-5 rounded shadow">
+                    <div class="border border-2 py-5 rounded shadow bg-body-secondary bg-gradient">
                         <a href="#" class="text-decoration-none text-secondary">
                             <i class="bi bi-file-earmark-text fs-1"></i>
                             <h6>Rencana Anggaran Biaya (RAB)</h6>
@@ -121,7 +145,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="border border-2 py-5 rounded shadow">
+                    <div class="border border-2 py-5 rounded shadow bg-body-secondary bg-gradient">
                         <a href="#" class="text-decoration-none text-secondary">
                             <i class="bi bi-person-video3 fs-1"></i>
                             <h6>Custom</h6>
@@ -181,6 +205,7 @@
     <div class="container mt-5">
         <h2 class="text-center text-uppercase">Pricelist</h2>
         <div class="row my-5">
+            {{-- paket satu --}}
             <div class="col-lg-3">
                 <div class="border border-2 p-3 rounded shadow">
                     <h2 class="text-uppercase">Basic</h2>
@@ -206,22 +231,150 @@
                     </div>
                 </div>
             </div>
+            {{-- paket 2 --}}
             <div class="col-lg-3">
-                <div class="border border-2 py-5 rounded shadow">
-                    satu
+                <div class="border border-2 p-3 rounded shadow">
+                    <h2 class="text-uppercase">Advanced</h2>
+                    <hr>
+                    <h4>Rp. 30.000 / m<sup>2</sup></h4>
+                    <p class="mt-3"><i class="bi bi-check-lg fw-bold text-success"></i> Denah</p>
+                    <p class="mt-3"><i class="bi bi-check-lg fw-bold text-success"></i> Tampak</p>
+                    <p class="mt-3"><i class="bi bi-check-lg fw-bold text-success"></i> Potongan</p>
+                    <p class="mt-3"><i class="bi bi-check-lg fw-bold text-success"></i> Rencana Pondasi</p>
+                    <p class="mt-3"><i class="bi bi-check-lg fw-bold text-success"></i> Rencana Atap</p>
+                    <p class="mt-3"><i class="bi bi-check-lg fw-bold text-success"></i> Rencana Plafon</p>
+                    <p class="mt-3"><i class="bi bi-check-lg fw-bold text-success"></i> Rencana Balok & Kolom</p>
+                    <p class="mt-3"><i class="bi bi-check-lg fw-bold text-success"></i> Rencana Titik Lampu</p>
+                    <p class="mt-3"><i class="bi bi-check-lg fw-bold text-success"></i> Rencana Sanitasi dan Drainase</p>
+                    <p class="mt-3"><i class="bi bi-check-lg fw-bold text-success"></i> Rencana Penulangan & Plat Lantai</p>
+                    <p class="mt-3"><i class="bi bi-check-lg fw-bold text-success"></i> Desain Struktur & Arsitektural</p>
+                    <p class="mt-3"><i class="bi bi-x fw-bold text-danger"></i> 3D Desain</p>
+                    <p class="mt-3"><i class="bi bi-x fw-bold text-danger"></i> Rencana Anggaran Biaya (RAB)</p>
+                    <div class="text-center mt-4">
+                        <a href="#">
+                            <button class="btn btn-success px-3 rounded-5"> <i class="bi bi-whatsapp"></i> Konsultasi GRATIS !</button>
+                        </a>
+                    </div>
                 </div>
             </div>
+
+            {{-- paket 3 --}}
             <div class="col-lg-3">
-                <div class="border border-2 py-5 rounded shadow">
-                    satu
+                <div class="border border-2 p-3 rounded shadow bg-primary text-white">
+                    <h2 class="text-uppercase">Standard <span class="badge rounded-pill text-bg-danger">Best</span></h2>
+                    <hr>
+                    <h4>Rp. 50.000 / m<sup>2</sup></h4>
+                    <p class="mt-3"><i class="bi bi-check-lg fw-bold text-warning"></i> Denah</p>
+                    <p class="mt-3"><i class="bi bi-check-lg fw-bold text-warning"></i> Tampak</p>
+                    <p class="mt-3"><i class="bi bi-check-lg fw-bold text-warning"></i> Potongan</p>
+                    <p class="mt-3"><i class="bi bi-check-lg fw-bold text-warning"></i> Rencana Pondasi</p>
+                    <p class="mt-3"><i class="bi bi-check-lg fw-bold text-warning"></i> Rencana Atap</p>
+                    <p class="mt-3"><i class="bi bi-check-lg fw-bold text-warning"></i> Rencana Plafon</p>
+                    <p class="mt-3"><i class="bi bi-check-lg fw-bold text-warning"></i> Rencana Balok & Kolom</p>
+                    <p class="mt-3"><i class="bi bi-check-lg fw-bold text-warning"></i> Rencana Titik Lampu</p>
+                    <p class="mt-3"><i class="bi bi-check-lg fw-bold text-warning"></i> Rencana Sanitasi dan Drainase</p>
+                    <p class="mt-3"><i class="bi bi-check-lg fw-bold text-warning"></i> Rencana Penulangan & Plat Lantai</p>
+                    <p class="mt-3"><i class="bi bi-check-lg fw-bold text-warning"></i> Desain Struktur & Arsitektural</p>
+                    <p class="mt-3"><i class="bi bi-check-lg fw-bold text-warning"></i> 3D Desain</p>
+                    <p class="mt-3"><i class="bi bi-x fw-bold text-danger"></i> Rencana Anggaran Biaya (RAB)</p>
+                    <div class="text-center mt-4">
+                        <a href="#">
+                            <button class="btn btn-danger px-3 rounded-5"> <i class="bi bi-whatsapp"></i> Konsultasi GRATIS !</button>
+                        </a>
+                    </div>
                 </div>
             </div>
+
+            {{-- paket 4 --}}
             <div class="col-lg-3">
-                <div class="border border-2 py-5 rounded shadow">
-                    satu
+                <div class="border border-2 p-3 rounded shadow">
+                    <h2 class="text-uppercase">Premium</h2>
+                    <hr>
+                    <h4>Rp. 75.000 / m<sup>2</sup></h4>
+                    <p class="mt-3"><i class="bi bi-check-lg fw-bold text-success"></i> Denah</p>
+                    <p class="mt-3"><i class="bi bi-check-lg fw-bold text-success"></i> Tampak</p>
+                    <p class="mt-3"><i class="bi bi-check-lg fw-bold text-success"></i> Potongan</p>
+                    <p class="mt-3"><i class="bi bi-check-lg fw-bold text-success"></i> Rencana Pondasi</p>
+                    <p class="mt-3"><i class="bi bi-check-lg fw-bold text-success"></i> Rencana Atap</p>
+                    <p class="mt-3"><i class="bi bi-check-lg fw-bold text-success"></i> Rencana Plafon</p>
+                    <p class="mt-3"><i class="bi bi-check-lg fw-bold text-success"></i> Rencana Balok & Kolom</p>
+                    <p class="mt-3"><i class="bi bi-check-lg fw-bold text-success"></i> Rencana Titik Lampu</p>
+                    <p class="mt-3"><i class="bi bi-check-lg fw-bold text-success"></i> Rencana Sanitasi dan Drainase</p>
+                    <p class="mt-3"><i class="bi bi-check-lg fw-bold text-success"></i> Rencana Penulangan & Plat Lantai</p>
+                    <p class="mt-3"><i class="bi bi-check-lg fw-bold text-success"></i> Desain Struktur & Arsitektural</p>
+                    <p class="mt-3"><i class="bi bi-check-lg fw-bold text-success"></i> 3D Desain</p>
+                    <p class="mt-3"><i class="bi bi-check-lg fw-bold text-success"></i> Rencana Anggaran Biaya (RAB)</p>
+                    <div class="text-center mt-4">
+                        <a href="#">
+                            <button class="btn btn-success px-3 rounded-5"> <i class="bi bi-whatsapp"></i> Konsultasi GRATIS !</button>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-@endsection
+    {{-- portofolio --}}
+    <div class="container mt-5">
+        <h2 class="text-center fw-bold">PORTOFOLIO</h2>
+        <div class="row mt-5">
+            {{-- 1 --}}
+            <div class="col-lg-4">
+                <img src="./images/portofolio/1.jpg" alt="portofolio-desainmurah.id" class="img-fluid">
+            </div>
+            {{-- 2 --}}
+            <div class="col-lg-4">
+                <img src="./images/portofolio/2.jpg" alt="portofolio-desainmurah.id" class="img-fluid">
+            </div>
+            {{-- 3 --}}
+            <div class="col-lg-4">
+                <img src="./images/portofolio/3.jpg" alt="portofolio-desainmurah.id" class="img-fluid">
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            {{-- 4 --}}
+            <div class="col-lg-4">
+                <img src="./images/portofolio/5.jpg" alt="portofolio-desainmurah.id" class="img-fluid">
+            </div>
+            {{-- 5 --}}
+            <div class="col-lg-4">
+                <img src="./images/portofolio/6.jpg" alt="portofolio-desainmurah.id" class="img-fluid">
+            </div>
+            {{-- 6 --}}
+            <div class="col-lg-4">
+                <img src="./images/portofolio/7.jpg" alt="portofolio-desainmurah.id" class="img-fluid">
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <a href="#">
+                <button class="btn btn-danger px-3 rounded-5"><i class="bi bi-images"></i> Full Portofolio</button>
+            </a>
+        </div>
+    </div>
+
+    {{-- testimoni --}}
+    <div class="container mt-5">
+        <h2 class="text-center text-uppercase">Testimoni</h2>
+        <div class="row mt-5">
+            <div class="col-lg-3 text-center">
+                <img src="./images/testimoni/1.webp" alt="" class="img-fluid">
+                <p class="mt-3">“Proses pengerjaan memuaskan, harga terjangakau”</p>
+            </div>
+            <div class="col-lg-3">
+                <img src="./images/testimoni/2.webp" alt="" class="img-fluid">
+                <p>“Hasilnya memuaskan, sesuai keinginan, harga ramah di terjangkau”</p>
+            </div>
+            <div class="col-lg-3">
+                <img src="./images/testimoni/3.webp" alt="" class="img-fluid">
+                <p>“Respon Customer Service sangat baik dan cepat, hasil desainnya bagus dan mudah dipahami oleh kontraktor ”</p>
+            </div>
+            <div class="col-lg-3">
+                <img src="./images/testimoni/4.webp" alt="" class="img-fluid">
+                <p>“Konsultasi dilayani dengan baik, datang ke kantornya juga nyaman dan harga juga terjangkau”</p>
+            </div>
+        </div>
+    </div>
+
+@endsection 
