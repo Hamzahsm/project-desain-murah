@@ -11,14 +11,14 @@
                         {{ session('success') }}
                         {{-- <p> Bagi yang mendaftar sebagai <span class="fw-bold">Owner</span> silahkan hubungi <a href="https://api.whatsapp.com/send?phone=082145352019&text=Assalamualaikum,Saya%20baru%20saja%20mengisi%20form%20registrasi%20owner%20dengan%20email%20....%20masukkan email anda" class="alert-link">Customer Service</a> untuk mendapatkan fitur unggulan</p> --}}
                         <p> Bagi yang mendaftar sebagai <span class="fw-bold">Owner</span> silahkan hubungi <a href="https://api.whatsapp.com/send?phone=082331531476&text=Assalamualaikum,Saya%20baru%20saja%20mengisi%20form%20registrasi%20owner%20dengan%20email%20....%20masukkan email anda" class="alert-link">Customer Service</a> untuk mendapatkan fitur unggulan</p>
-                        <button class="btn-close" type="button" data-bs-dismiss="alert" aria-label="Close"></button>
+                        <button class="btn-close" type="button" data-bs-dismiss="alert" aria-label="Close"></button> 
                     </div>   
                 @endif 
 
                 @if (session()->has('loginError'))
                 <div class="alert alert-danger alert-dismissible fade show" role="alert">
                     {{ session('loginError') }}
-                    <button class="btn-close" type="button" data-bs-dismiss="alert" aria-label="Close"></button>
+                    <button class="btn-close" type="button" data-bs-dismiss="alert" aria-label="Close"></button> 
                 </div>   
                 @endif
                 <main class="form-signin w-100 m-auto">

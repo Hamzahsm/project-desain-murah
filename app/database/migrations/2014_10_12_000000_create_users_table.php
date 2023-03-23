@@ -16,13 +16,15 @@ return new class extends Migration
             $table->string('name');
             $table->string('username');
             $table->string('image')->nullable();
-            $table->string('number')->unique();
-            $table->string('email')->unique();
+            // $table->string('number')->unique();
+            $table->string('number');
+            // $table->string('email')->unique();
+            $table->string('email');
             $table->boolean('is_owner')->default(false);
             $table->boolean('is_admin')->default(false);
             $table->timestamp('email_verified_at')->nullable(); 
             $table->string('password');
-            $table->rememberToken();
+            $table->rememberToken(); 
             $table->timestamps();
         });
     }

@@ -5,11 +5,11 @@
 
     @if (session('resent'))
     <div class="alert alert-success" role="alert">
-        Untuk melengkapi pendaftaran, link verifikasi akun berhasil di kirim pada email yang telah di daftarkan..
+        Link verifikasi berhasil di kirim pada email yang telah di daftarkan. Silahkan melakukan aktivasi akun. 
     </div>
     @endif
 
-Jika anda tidak mendapatkannya selama 5 menit, anda boleh meminta ulang link verifikasi
+Jika anda tidak mendapatkannya selama 5 menit, Minta ulang link verifikasi
 <form action="{{ route('verification.resend') }}" method="POST" class="d-inline">
     @csrf
     <button type="submit" class="d-inline btn btn-link p-0">

@@ -1,7 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\RegistrasiController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\VerificationController;
+use App\Http\Controllers\UserDashborad;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,12 +18,16 @@ use App\Http\Controllers\RegistrasiController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-}); 
+// Route::get('/', function () {
+//     return view('welcome');
+// }); 
+
+Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/home', function(){
-    return view('home');
+    return view('home', [
+        'title' => 'Home'
+    ]);
 });
 
 // route login and register
@@ -28,8 +36,12 @@ Route::post('/login', [LoginController::class, 'login'])->name('login.perform');
 Route::get('/registrasi', [RegistrasiController::class, 'registrasiUser']);
 Route::post('/registrasi-user', [RegistrasiController::class, 'storeUser']);  
 Route::get('/verification', [RegistrasiController::class, 'linkVerification']); 
+Route::post('/logout', [RegistrasiController::class, 'logout']); 
 
 // email verification 
 Route::get('email/verify', [VerificationController::class, 'show'])->name('verification.notice');
 Route::get('email/verify/{id}/{hash}', [VerificationController::class, 'verify'])->name('verification.verify')->middleware(['signed']);
 Route::post('/email/resend', [VerificationController::class, 'resend'])->name('verification.resend'); 
+
+// dashboard user
+Route::resource('/user', UserDashborad::class);
