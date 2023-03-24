@@ -47,7 +47,11 @@ Route::post('/email/resend', [VerificationController::class, 'resend'])->name('v
 // dashboard user
 Route::resource('/user', UserDashborad::class);
 Route::get('/my-profile/{user:name}', [UserDashborad::class, 'myProfile']); 
+Route::get('/dashboard/{user:name}', [UserDashborad::class, 'myDashboard']);
 // Route::get('/my-profile/{user:name}', [UserDashborad::class, 'myProfile'])->middleware('auth'); 
 
 // SuperAdmin 
 Route::get('/super-admin', [SuperAdminController::class, 'index'])->middleware('is.owner'); 
+Route::get('/daftar-marketing', [SuperAdminController::class, 'marketing'])->middleware('is.owner');
+Route::get('/edit-komisi/{user:name}', [SuperAdminController::class, 'editKomisi'])->middleware('is.owner');
+Route::post('/update-komisi/{user:name}', [SuperAdminController::class, 'updateKomisi'])->middleware('is.owner'); 

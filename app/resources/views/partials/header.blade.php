@@ -13,7 +13,7 @@
                 <i class="bi bi-person-fill-exclamation"></i> Hallo, {{ auth()->user()->name }}
             </a>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="/user"><i class="fa-solid fa-folder-open"></i> My Dashboard</a></li>
+                <li><a class="dropdown-item" href="/dashboard/{{ auth()->user()->name }}"><i class="fa-solid fa-folder-open"></i> My Dashboard</a></li>
                 <li><hr class="dropdown-divider"></li>  
                 <li><a class="dropdown-item" href="/my-profile/{{ auth()->user()->name }}"><i class="fa-solid fa-user"></i> My Profile</a></li>
                 <li><hr class="dropdown-divider"></li>  

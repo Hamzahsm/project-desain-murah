@@ -74,4 +74,14 @@ class UserDashborad extends Controller
             'user' => $user
         ]); 
     } 
+
+    public function myDashboard(User $user){
+        // authorization
+        // $this->authorize('owner');
+        return view('dashboard.dashboard', [
+            'title' => 'Dashboard - Desain Murah ID',
+            'user' => $user
+        ]); 
+    } 
+
 }

@@ -13,11 +13,6 @@
     <link rel="stylesheet" href="../css/dashboard.css">
   </head>
   <body>
-    {{-- header --}}
-    @include('admin.partials.header')
-
-    @include('admin.partials.sidebar')
-    {{-- body  --}}
     <main>
         @yield('container-admin')
     </main>

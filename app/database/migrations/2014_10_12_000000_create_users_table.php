@@ -22,6 +22,8 @@ return new class extends Migration
             $table->string('email');
             $table->boolean('is_owner')->default(false); 
             $table->boolean('is_admin')->default(false);
+            $table->string('komisi')->nullable();
+            $table->string('klaim')->nullable();
             $table->timestamp('email_verified_at')->nullable(); 
             $table->string('password');
             $table->rememberToken(); 
