@@ -48,20 +48,7 @@
     </div>
 
 {{-- alur pelayanan desain --}}
-<div class="container mt-5">
-    <div class="row">
-        <div class="col-lg-3">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quaerat!</p>
-        </div>
-        <div class="col-lg-3">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quaerat!</p>
-        </div>
-        <div class="col-lg-3">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quaerat!</p>
-        </div>
-        <div class="col-lg-3">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quaerat!</p>
-        </div>
-    </div>
+<div class="container mt-5 text-center">
+    <img src="images/alur-pelayanan.png" alt="alur-pelayanan" class="img-fluid rounded">
 </div>
 @endsection 
