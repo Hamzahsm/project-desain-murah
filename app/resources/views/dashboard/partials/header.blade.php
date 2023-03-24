@@ -11,9 +11,9 @@
                 <i class="bi bi-person-fill-exclamation"></i> Hallo, {{ auth()->user()->name }}
             </a>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="/user"><i class="fa-solid fa-folder-open"></i> My Dashboard</a></li>
+                <li><a class="dropdown-item" href="/user"><i class="bi bi-folder"></i> My Dashboard</a></li>
                 <li><hr class="dropdown-divider"></li>  
-                <li><a class="dropdown-item" href="/my-profile/{{ auth()->user()->name }}"><i class="fa-solid fa-user"></i> My Profile</a></li>
+                <li><a class="dropdown-item" href="/my-profile/{{ auth()->user()->name }}"><i class="bi bi-person"></i> Profile</a></li>
                 <li><hr class="dropdown-divider"></li>  
                 {{-- berikan akses gerbang yang namanya admin --}}
                 @can('owner')
@@ -24,15 +24,13 @@
                 @endcan 
                 {{-- this code can access for user that have key gate --}}
                 @can('admin')
-                <li><a href="/buat-produk-prioritas" class="dropdown-item"><i class="fa-solid fa-cart-plus"></i> Buat Produk Prioritas</a></li>
-                <li><hr class="dropdown-divider"></li>  
-                <li><a href="/pemilik" class="dropdown-item"><i class="fa-solid fa-right-to-bracket"></i> Masuk ke Admin</a></li>
+                <li><a href="/super-admin" class="dropdown-item"><i class="bi bi-box-arrow-in-right"></i> Masuk ke Admin</a></li> 
                 <li><hr class="dropdown-divider"></li> 
                 @endcan
                 <li>
                   <form action="/logout" method="POST">
                     @csrf
-                    <button type="submit" class="dropdown-item"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</button> 
+                    <button type="submit" class="dropdown-item"><i class="bi bi-box-arrow-right"></i> Logout</button> 
                   </form>
                 </li>
             </ul>

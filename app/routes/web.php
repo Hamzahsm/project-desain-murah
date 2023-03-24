@@ -6,6 +6,7 @@ use App\Http\Controllers\RegistrasiController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\VerificationController;
 use App\Http\Controllers\UserDashborad;
+use App\Http\Controllers\SuperAdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -45,3 +46,8 @@ Route::post('/email/resend', [VerificationController::class, 'resend'])->name('v
 
 // dashboard user
 Route::resource('/user', UserDashborad::class);
+Route::get('/my-profile/{user:name}', [UserDashborad::class, 'myProfile']); 
+// Route::get('/my-profile/{user:name}', [UserDashborad::class, 'myProfile'])->middleware('auth'); 
+
+// SuperAdmin 
+Route::get('/super-admin', [SuperAdminController::class, 'index'])->middleware('is.owner'); 

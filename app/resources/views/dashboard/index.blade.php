@@ -19,7 +19,7 @@
                 <td>Rp 500.000</td>
                 <td>
                     <a href="#">
-                        <button class="btn btn-success"> <i class="bi bi-hand-index"></i> Klaim Sekarang</button>
+                        <button class="btn btn-info"> <i class="bi bi-hand-index"></i> Klaim Sekarang</button>
                     </a>
                 </td>
               </tr>
@@ -48,7 +48,11 @@
     </div>
 
 {{-- alur pelayanan desain --}}
-<div class="container mt-5 text-center">
+<div class="container my-5 text-center">
     <img src="images/alur-pelayanan.png" alt="alur-pelayanan" class="img-fluid rounded">
+    <p class="mt-3">Memiliki Pertanyaan Lain ? Hubungi Admin dibawah ini</p>
+    <a href="#">
+      <button class="btn btn-success"><i class="bi bi-whatsapp"></i> Chat Admin</button>
+    </a>
 </div>
-@endsection 
+@endsection  

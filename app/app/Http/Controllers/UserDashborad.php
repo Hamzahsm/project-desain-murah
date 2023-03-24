@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
 
 class UserDashborad extends Controller
 {
@@ -14,9 +15,6 @@ class UserDashborad extends Controller
         //
         return view('dashboard.index', [
             'title' => 'User Dashboard',
-            // 'products' => Product::where('user_id', auth()->user()->id)->latest()->get(),
-            // 'posts' => Post::where('user_id', auth()->user()->id)->latest()->get(),
-            // 'priorities' => Priority::where('user_id', auth()->user()->id)->latest()->get()
         ]); 
     }
 
@@ -67,4 +65,13 @@ class UserDashborad extends Controller
     {
         //
     }
+
+    public function myProfile(User $user){
+        // authorization
+        // $this->authorize('owner');
+        return view('dashboard.profile', [
+            'title' => 'My Profile',
+            'user' => $user
+        ]); 
+    } 
 }
