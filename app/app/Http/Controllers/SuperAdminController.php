@@ -45,8 +45,8 @@ class SuperAdminController extends Controller
     public function progressDesain(Client $client) {
         return view('admin.progress-desain', [
             'title' => 'Progress Desain - Desain Murah ID',
-            'clients' => $client,
-            // 'users' => $client->user->load('user', 'referral')
+            // 'users' => User::where('is_owner', false)->get()
+            'clients' => $client::all()
         ]);
     }
 
@@ -71,7 +71,7 @@ class SuperAdminController extends Controller
 
         Client::create($validateData);
 
-        return redirect('/progress-desain')->with('success', 'Data Berhasil Ditambah !'); 
+        return redirect('/progress-desain')->with('success', 'Data Berhasil Ditambah !');  
     }
 
 

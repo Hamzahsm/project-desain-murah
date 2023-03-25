@@ -30,7 +30,7 @@
                             <thead>
                             <tr>
                                 <th scope="col">No</th>
-                                {{-- <th scope="col">Code Referral</th> --}}
+                                <th scope="col">Code Referral</th>
                                 <th scope="col">Marketing</th>
                                 <th scope="col">Klien</th>
                                 <th scope="col">Keterangan</th>
@@ -41,9 +41,9 @@
                                 @foreach ($clients as $client)
                                 <tr>
                                 <td>{{ $loop->iteration }}</td>
-                                {{-- <td>{{ $client->referral_id }}</td> --}}
+                                <td>{{ $client->referral->name }}</td>
                                 <td>{{ $client->user->name }}</td>
-                                <td>{{ $client->client_id }}</td>
+                                <td>{{ $client->name }}</td>
                                 <td>{{ $client->keterangan }}</td>
                                 <td>
                                     <a href="/delete-progress/{{ $client->name }}">

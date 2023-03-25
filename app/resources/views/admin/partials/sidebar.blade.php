@@ -42,7 +42,7 @@
 
       <ul class="nav flex-column mb-2">
         <li class="nav-item">
-            <a href="/admin-cek-artikel" class="nav-link">
+            <a href="/progress-desain" class="nav-link">
               <span><i class="bi bi-database"></i> Buka Data</span>
             </a>
         </li>
