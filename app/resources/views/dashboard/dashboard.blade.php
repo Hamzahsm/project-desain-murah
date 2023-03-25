@@ -40,7 +40,7 @@
                 <th scope="row">1</th>
                 <td>Desain Rumah Bu Irma</td>
                 <td>Selesai Dalam 5 Hari Lagi</td>
-              </tr>
+              </tr> 
             </tbody>
         </table>
     </div>

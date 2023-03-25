@@ -26,14 +26,12 @@
                 @endcan 
                 {{-- this code can access for user that have key gate --}}
                 @can('admin')
-                <li><a href="/buat-produk-prioritas" class="dropdown-item"><i class="fa-solid fa-cart-plus"></i> Buat Produk Prioritas</a></li>
-                <li><hr class="dropdown-divider"></li>  
-                <li><a href="/pemilik" class="dropdown-item"><i class="fa-solid fa-right-to-bracket"></i> Masuk ke Admin</a></li>
+                <li><a href="/super-admin" class="dropdown-item"><i class="fa-solid fa-right-to-bracket"></i> Masuk ke Admin</a></li>
                 <li><hr class="dropdown-divider"></li> 
                 @endcan
                 <li>
                   <form action="/logout" method="POST">
-                    @csrf
+                    @csrf 
                     <button type="submit" class="dropdown-item"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</button> 
                   </form>
                 </li>

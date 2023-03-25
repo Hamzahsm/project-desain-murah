@@ -19,7 +19,7 @@
                         </a> 
                     </div>
                     <div class="col">
-                        <a href="/admin-cek-user" class="text-decoration-none">
+                        <a href="/progress-desain" class="text-decoration-none">
                           <div class="card shadow">
                             <div class="card-body">
                               <h5 class="card-text text-secondary text-uppercase"> <i class="bi bi-file-earmark-text"></i> Progress Desain</h5>

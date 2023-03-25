@@ -55,3 +55,6 @@ Route::get('/super-admin', [SuperAdminController::class, 'index'])->middleware('
 Route::get('/daftar-marketing', [SuperAdminController::class, 'marketing'])->middleware('is.owner');
 Route::get('/edit-komisi/{user:name}', [SuperAdminController::class, 'editKomisi'])->middleware('is.owner');
 Route::post('/update-komisi/{user:name}', [SuperAdminController::class, 'updateKomisi'])->middleware('is.owner'); 
+Route::get('/progress-desain', [SuperAdminController::class, 'progressDesain'])->middleware('is.owner');
+Route::get('/add-progress-desain', [SuperAdminController::class, 'addProgressDesain'])->middleware('is.owner');
+Route::post('/add-progress', [SuperAdminController::class, 'addProgress'])->middleware('is.owner');
