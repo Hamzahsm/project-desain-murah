@@ -13,7 +13,7 @@
 
               </tr>
             </thead>
-            <tbody>
+            <tbody> 
               <tr>
                 <td>{{ $user->komisi }}</td>
                 <td>{{ $user->klaim }}</td>
@@ -36,12 +36,14 @@
               </tr>
             </thead>
             <tbody>
+              @foreach ($clients as $client)
               <tr>
-                <th scope="row">1</th>
-                <td>Desain Rumah Bu Irma</td>
-                <td>Selesai Dalam 5 Hari Lagi</td>
+                <th scope="row">{{ $loop->iteration }}</th>
+                <td>{{ $client->name }}</td>
+                <td>{{ $client->keterangan }}</td>
               </tr> 
             </tbody>
+            @endforeach
         </table>
     </div>
 

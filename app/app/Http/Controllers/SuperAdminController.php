@@ -46,7 +46,7 @@ class SuperAdminController extends Controller
         return view('admin.progress-desain', [
             'title' => 'Progress Desain - Desain Murah ID',
             // 'users' => User::where('is_owner', false)->get()
-            'clients' => $client::all()
+            'clients' => $client::all() 
         ]);
     }
 

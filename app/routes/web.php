@@ -47,7 +47,7 @@ Route::post('/email/resend', [VerificationController::class, 'resend'])->name('v
 // dashboard user
 Route::resource('/user', UserDashborad::class);
 Route::get('/my-profile/{user:name}', [UserDashborad::class, 'myProfile']); 
-Route::get('/dashboard/{user:name}', [UserDashborad::class, 'myDashboard']);
+Route::get('/dashboard/{user:name}', [UserDashborad::class, 'myDashboard']); 
 // Route::get('/my-profile/{user:name}', [UserDashborad::class, 'myProfile'])->middleware('auth'); 
 
 // SuperAdmin 

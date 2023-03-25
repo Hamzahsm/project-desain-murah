@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\Client;
+use App\Models\Referral;
 
 class UserDashborad extends Controller
 {
@@ -76,12 +78,13 @@ class UserDashborad extends Controller
     } 
 
     public function myDashboard(User $user){
-        // authorization
-        // $this->authorize('owner');
         return view('dashboard.dashboard', [
             'title' => 'Dashboard - Desain Murah ID',
-            'user' => $user
+            'user' => $user,
+            // 'clients' => $user->client->user_id
+            // 'clients' => Client::all()
+            'clients' => Client::where('user_id', auth()->user()->id)->latest()->get(),
         ]); 
-    } 
+    }  
 
 }

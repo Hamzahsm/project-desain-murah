@@ -51,7 +51,7 @@ class User extends Authenticatable implements MustVerifyEmail
 
     // membuat eloquent relationship dengan tabel user
     public function client(){
-        return $this->belongsTo(Client::class, 'client_id');
+        return $this->belongsTo(Client::class, 'user_id');
     }
 
 
@@ -59,6 +59,6 @@ class User extends Authenticatable implements MustVerifyEmail
     public function referral(){
         return $this->belongsTo(Referral::class, 'referral_id');
     }
-
+ 
 
 }
