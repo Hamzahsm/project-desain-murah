@@ -55,7 +55,6 @@ class SuperAdminController extends Controller
         return view('admin.add-progress-desain', [
             'title' => 'Tambah Progress Desain',
             'users' => User::all(),
-            'referrals' => Referral::all()
         ]);
     }
 
@@ -63,10 +62,9 @@ class SuperAdminController extends Controller
     public function addProgress(Request $request , Client $client) {
         // return $request;
         $validateData = $request->validate([
-            'referral_id' => 'required',
             'user_id' => 'required',
             'name' => 'required',
-            'keterangan' => 'required',
+            'keterangan' => 'required', 
         ]);
 
         Client::create($validateData);

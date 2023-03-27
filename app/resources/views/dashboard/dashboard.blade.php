@@ -30,6 +30,7 @@
             <thead>
               <tr>
                 <th scope="col">No</th>
+                {{-- <th scope="col">Code Referral</th> --}}
                 <th scope="col">Project</th>
                 <th scope="col">Keterangan</th>
 
@@ -38,7 +39,8 @@
             <tbody>
               @foreach ($clients as $client)
               <tr>
-                <th scope="row">{{ $loop->iteration }}</th>
+                <td>{{ $loop->iteration }}</td>
+                {{-- <td>{{ $client->referral->name }}</td> --}}
                 <td>{{ $client->name }}</td>
                 <td>{{ $client->keterangan }}</td>
               </tr> 

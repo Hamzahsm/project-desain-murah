@@ -7,14 +7,14 @@
         <form action="/add-progress" method="POST" enctype="multipart/form-data">
             @csrf
 
-            <div class="mb-3">
+            {{-- <div class="mb-3">
                 <label for="referral"> Code Referral Marketing</label>
                 <select name="referral_id" id="referral" class="form-select mt-2">
                     @foreach ($referrals as $referral)
                         <option value="{{ $referral->id }}" selected>{{ $referral->name }}</option>   
                     @endforeach 
                 </select> 
-            </div> 
+            </div>  --}}
 
             <div class="mb-3">
                 <label for="user"> Marketing</label>

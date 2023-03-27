@@ -18,8 +18,8 @@ class Client extends Model
         return $this->belongsTo(User::class, 'user_id');
     }
 
-    public function referral(){
-        return $this->belongsTo(Referral::class, 'referral_id');
-    }
+    // public function referral(){
+    //     return $this->belongsTo(Referral::class, 'referral_id');
+    // } 
 
 }
