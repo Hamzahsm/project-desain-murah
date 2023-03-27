@@ -18,7 +18,9 @@
                 <td>{{ $user->komisi }}</td>
                 <td>{{ $user->klaim }}</td>
                 <td>
-                    <a href="#"> Klaim Sekarang</a>
+                    <a href="https://wa.link/mw8r93" class="nav-link text-success" target="_blank">
+                      <i class="bi bi-hand-index-thumb"></i> Klaim Sekarang
+                    </a>
                 </td>
               </tr>
             </tbody>
@@ -42,7 +44,7 @@
                 <td>{{ $loop->iteration }}</td>
                 {{-- <td>{{ $client->referral->name }}</td> --}}
                 <td>{{ $client->name }}</td>
-                <td>{{ $client->keterangan }}</td>
+                <td>{!! $client->keterangan !!}</td>
               </tr> 
             </tbody>
             @endforeach
@@ -56,8 +58,8 @@
             <img src="../images/alur-pelayanan-2.png" alt="alur-pelayanan" class="img-fluid rounded">
         </div>
         <div class="col-lg-6">
-            <p class="mt-3"> <i class="bi bi-chat-text"></i> Memiliki Pertanyaan Lain ? Hubungi Admin dibawah ini</p>
-            <a href="#">
+            <h5 class="mt-5"> <i class="bi bi-chat-text"></i> Memiliki Pertanyaan Lain ? Hubungi Admin dibawah ini</h5>
+            <a href="https://wa.link/ts603h" class="nav-link mt-3" target="_blank">
               <button class="btn btn-success"><i class="bi bi-whatsapp"></i> Chat Admin</button>
             </a>
         </div>

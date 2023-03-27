@@ -1,27 +1,33 @@
 @extends('template.home')
 
-@section('container')
+@section('container-home')
 
-    {{-- slider --}}
-    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+    {{-- carousel --}}
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="./images/slider-1.jpg" class="d-block w-100" alt="slider satu">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <a href="https://wa.link/pvuit1" target="_blank">
+                <img src="./images/slider-1.jpg" class="d-block w-100 img-responsive img-fluid" alt="slider satu">
+            </a>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <a href="https://wa.link/pvuit1" target="_blank">
+                <img src="./images/slider-2.jpg" class="d-block w-100 img-responsive img-fluid" alt="slider dua">
+            </a>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <a href="https://wa.link/pvuit1" target="_blank">
+                <img src="./images/slider-3.jpg" class="d-block w-100 img-responsive img-fluid" alt="slider tiga">
+            </a>
+          </div>
         </div>
-        <div class="carousel-item">
-            <img src="./images/slider-2.jpg" class="d-block w-100" alt="slider dua">
-        </div>
-        <div class="carousel-item">
-            <img src="./images/slider-3.jpg" class="d-block w-100" alt="slider tiga">
-        </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span> 
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
         </button>
     </div>
 
@@ -42,7 +48,9 @@
                 <h5>Kota</h5>
             </div>
             <div class="col-lg-3 p-3">
-                <button class="btn btn-success px-3 rounded-5"> <i class="bi bi-whatsapp"></i> Konsultasi GRATIS !</button>
+                <a href="https://wa.link/1a5pi5" target="_blank">
+                    <button class="btn btn-success px-3 rounded-5"> <i class="bi bi-whatsapp"></i> Konsultasi GRATIS !</button>
+                </a>
             </div>
         </div>
     </div>
@@ -51,7 +59,7 @@
     <div class="container mt-5">
         <div class="row align-items-start mt-5">
             <div class="col-lg-6 p-3">
-                <img src="./images/square-desain-murah-id.jpg" alt="desain murah id poster" class="rounded-3">
+                <img src="./images/square-desain-murah-id.jpg" alt="desain murah id poster" class="rounded-3 img-fluid img-responsive">
             </div>
             <div class="col-lg-6 p-3">
                 <h6 class="text-uppercase">Desainmurah.id</h6>
@@ -80,78 +88,78 @@
         <h2 class="text-uppercase text-center fw-bold">Layanan Jasa</h2>
 
         <div class="row text-center mt-5">
-            <div class="col-lg-4">
+            <div class="col-lg-4 mt-4">
                 <div class="border border-2 py-5 rounded shadow bg-body-secondary bg-gradient">
                     <a href="#" class="text-decoration-none text-secondary">
                         <i class="bi bi-house-heart fs-1"></i>
                         <h6>Desain Interior</h6>
                     </a>
                     <p>Mari buat desain interior sesuai keinginan untuk rumah mewah dan rumah minimalis.</p>
-                    <a href="#">
+                    <a href="https://wa.link/1a5pi5" target="_blank">
                         <button class="btn btn-success px-3 rounded-5"> <i class="bi bi-whatsapp"></i> Konsultasi GRATIS !</button>
                     </a>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 mt-4">
                 <div class="border border-2 py-5 rounded shadow bg-body-secondary bg-gradient">
                     <a href="#" class="text-decoration-none text-secondary">
                         <i class="bi bi-house-gear fs-1"></i>
                         <h6>Desain Eksterior</h6>
                     </a>
                     <p>Ciptakan desain eksterior rumah yang terlihat mewah ataupun minimalis untuk menciptakan kesan tertentu.</p>
-                    <a href="#">
+                    <a href="https://wa.link/1a5pi5" target="_blank">
                         <button class="btn btn-success px-3 rounded-5"> <i class="bi bi-whatsapp"></i> Konsultasi GRATIS !</button>
                     </a>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 mt-4">
                 <div class="border border-2 py-5 rounded shadow bg-body-secondary bg-gradient">
                     <a href="#" class="text-decoration-none text-secondary">
                         <i class="bi bi-map fs-1"></i>
                         <h6>Denah</h6>
                     </a>
                     <p>Bantu Kontraktor membangun lebih efektif dan efisien dengan membuat denah yang informatif.</p>
-                    <a href="#">
+                    <a href="https://wa.link/1a5pi5" target="_blank">
                         <button class="btn btn-success px-3 rounded-5"> <i class="bi bi-whatsapp"></i> Konsultasi GRATIS !</button>
                     </a>
                 </div>
             </div>
         </div>
 
-        <div class="container mt-5">
+        <div class="">
             <div class="row text-center">
-                <div class="col-lg-4">
+                <div class="col-lg-4 mt-4">
                     <div class="border border-2 py-5 rounded shadow bg-body-secondary bg-gradient">
                         <a href="#" class="text-decoration-none text-secondary">
                             <i class="bi bi-laptop fs-1"></i>
                             <h6>Desain 2D & 3D</h6>
                         </a>
                         <p>Model bangunan akan nampak lebih nyata dan lebih mudah dipahami bahkan oleh orang awam sekalipun.</p>
-                        <a href="#">
+                        <a href="https://wa.link/1a5pi5" target="_blank">
                             <button class="btn btn-success px-3 rounded-5"> <i class="bi bi-whatsapp"></i> Konsultasi GRATIS !</button>
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 mt-4">
                     <div class="border border-2 py-5 rounded shadow bg-body-secondary bg-gradient">
                         <a href="#" class="text-decoration-none text-secondary">
                             <i class="bi bi-file-earmark-text fs-1"></i>
                             <h6>Rencana Anggaran Biaya (RAB)</h6>
                         </a>
                         <p>Membuat Anggaran Pembangunan lebih maksimal, terarah dan terukur.</p>
-                        <a href="#">
+                        <a href="https://wa.link/1a5pi5" target="_blank">
                             <button class="btn btn-success px-3 rounded-5"> <i class="bi bi-whatsapp"></i> Konsultasi GRATIS !</button>
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 mt-4">
                     <div class="border border-2 py-5 rounded shadow bg-body-secondary bg-gradient">
                         <a href="#" class="text-decoration-none text-secondary">
                             <i class="bi bi-person-video3 fs-1"></i>
                             <h6>Custom</h6>
                         </a>
                         <p>Ingin melakukan custom order ? Mari sampaikan keiginan Anda melalui WhatsApp dibawah ini</p>
-                        <a href="#">
+                        <a href="https://wa.link/1a5pi5" target="_blank">
                             <button class="btn btn-success px-3 rounded-5"> <i class="bi bi-whatsapp"></i> Konsultasi GRATIS !</button>
                         </a>
                     </div>
@@ -206,7 +214,7 @@
         <h2 class="text-center text-uppercase">Pricelist</h2>
         <div class="row my-5">
             {{-- paket satu --}}
-            <div class="col-lg-3">
+            <div class="col-lg-3 mt-4">
                 <div class="border border-2 p-3 rounded shadow">
                     <h2 class="text-uppercase">Basic</h2>
                     <hr>
@@ -232,7 +240,7 @@
                 </div>
             </div>
             {{-- paket 2 --}}
-            <div class="col-lg-3">
+            <div class="col-lg-3 mt-4">
                 <div class="border border-2 p-3 rounded shadow">
                     <h2 class="text-uppercase">Advanced</h2>
                     <hr>
@@ -259,7 +267,7 @@
             </div>
 
             {{-- paket 3 --}}
-            <div class="col-lg-3">
+            <div class="col-lg-3 mt-4">
                 <div class="border border-2 p-3 rounded shadow bg-primary text-white">
                     <h2 class="text-uppercase">Standard <span class="badge rounded-pill text-bg-danger">Best</span></h2>
                     <hr>
@@ -286,7 +294,7 @@
             </div>
 
             {{-- paket 4 --}}
-            <div class="col-lg-3">
+            <div class="col-lg-3 mt-4">
                 <div class="border border-2 p-3 rounded shadow">
                     <h2 class="text-uppercase">Premium</h2>
                     <hr>
@@ -319,31 +327,31 @@
         <h2 class="text-center fw-bold">PORTOFOLIO</h2>
         <div class="row mt-5">
             {{-- 1 --}}
-            <div class="col-lg-4">
-                <img src="./images/portofolio/1.jpg" alt="portofolio-desainmurah.id" class="img-fluid">
+            <div class="col-lg-4 mt-4">
+                <img src="./images/portofolio/1.jpg" alt="portofolio-desainmurah.id" class="img-fluid img-responsive">
             </div>
             {{-- 2 --}}
-            <div class="col-lg-4">
-                <img src="./images/portofolio/2.jpg" alt="portofolio-desainmurah.id" class="img-fluid">
+            <div class="col-lg-4 mt-4">
+                <img src="./images/portofolio/2.jpg" alt="portofolio-desainmurah.id" class="img-fluid img-responsive">
             </div>
             {{-- 3 --}}
-            <div class="col-lg-4">
-                <img src="./images/portofolio/3.jpg" alt="portofolio-desainmurah.id" class="img-fluid">
+            <div class="col-lg-4 mt-4">
+                <img src="./images/portofolio/3.jpg" alt="portofolio-desainmurah.id" class="img-fluid img-responsive">
             </div>
         </div>
 
-        <div class="row mt-5">
+        <div class="row">
             {{-- 4 --}}
-            <div class="col-lg-4">
-                <img src="./images/portofolio/5.jpg" alt="portofolio-desainmurah.id" class="img-fluid">
+            <div class="col-lg-4 mt-4">
+                <img src="./images/portofolio/5.jpg" alt="portofolio-desainmurah.id" class="img-fluid img-responsive">
             </div>
             {{-- 5 --}}
-            <div class="col-lg-4">
-                <img src="./images/portofolio/6.jpg" alt="portofolio-desainmurah.id" class="img-fluid">
+            <div class="col-lg-4 mt-4">
+                <img src="./images/portofolio/6.jpg" alt="portofolio-desainmurah.id" class="img-fluid img-responsive">
             </div>
             {{-- 6 --}}
-            <div class="col-lg-4">
-                <img src="./images/portofolio/7.jpg" alt="portofolio-desainmurah.id" class="img-fluid">
+            <div class="col-lg-4 mt-4">
+                <img src="./images/portofolio/7.jpg" alt="portofolio-desainmurah.id" class="img-fluid img-responsive">
             </div>
         </div>
 
@@ -358,21 +366,45 @@
     <div class="container mt-5">
         <h2 class="text-center text-uppercase">Testimoni</h2>
         <div class="row mt-5">
-            <div class="col-lg-3 text-center">
-                <img src="./images/testimoni/1.webp" alt="" class="img-fluid">
-                <p class="mt-3">“Proses pengerjaan memuaskan, harga terjangakau”</p>
+            <div class="col-lg-3 text-center mt-4">
+                <img src="./images/testimoni/1.webp" alt="" class="img-fluid img-responsive">
+                <p class="mt-3 text-center text-secondary">“Proses pengerjaan memuaskan, harga terjangakau”</p>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <p class="fw-italic mt-2">Klien</p>
             </div>
-            <div class="col-lg-3">
-                <img src="./images/testimoni/2.webp" alt="" class="img-fluid">
-                <p>“Hasilnya memuaskan, sesuai keinginan, harga ramah di terjangkau”</p>
+            <div class="col-lg-3 text-center mt-4">
+                <img src="./images/testimoni/2.webp" alt="" class="img-fluid img-responsive">
+                <p class="mt-3 text-center text-secondary">“Hasilnya memuaskan, sesuai keinginan, harga ramah di terjangkau”</p>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <p class="fw-italic mt-2">Klien</p>
             </div>
-            <div class="col-lg-3">
-                <img src="./images/testimoni/3.webp" alt="" class="img-fluid">
-                <p>“Respon Customer Service sangat baik dan cepat, hasil desainnya bagus dan mudah dipahami oleh kontraktor ”</p>
+            <div class="col-lg-3 mt-4 text-center">
+                <img src="./images/testimoni/3.webp" alt="" class="img-fluid img-responsive">
+                <p class="mt-3 text-center text-secondary">“Respon Customer Service sangat baik dan cepat, hasil desainnya bagus dan mudah dipahami oleh kontraktor ”</p>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <p class="fw-italic mt-2">Klien</p>
             </div>
-            <div class="col-lg-3">
-                <img src="./images/testimoni/4.webp" alt="" class="img-fluid">
-                <p>“Konsultasi dilayani dengan baik, datang ke kantornya juga nyaman dan harga juga terjangkau”</p>
+            <div class="col-lg-3 mt-4 text-center">
+                <img src="./images/testimoni/4.webp" alt="" class="img-fluid img-responsive">
+                <p class="mt-3 text-center text-secondary">“Konsultasi dilayani dengan baik, datang ke kantornya juga nyaman dan harga juga terjangkau”</p>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <p class="fw-italic mt-2">Klien</p>
             </div>
         </div>
     </div>

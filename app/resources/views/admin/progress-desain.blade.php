@@ -31,8 +31,8 @@
                             <tr>
                                 <th scope="col">No</th>
                                 {{-- <th scope="col">Code Referral</th> --}}
-                                <th scope="col">Marketing</th>
-                                <th scope="col">Klien</th>
+                                <th scope="col">Nama Marketing</th>
+                                <th scope="col">Nama Klien</th>
                                 <th scope="col">Keterangan</th>
                                 <th scope="col">Aksi</th>      
                             </tr>
@@ -44,7 +44,7 @@
                                 {{-- <td>{{ $client->referral->name }}</td> --}}
                                 <td>{{ $client->user->name }}</td>
                                 <td>{{ $client->name }}</td>
-                                <td>{{ $client->keterangan }}</td>
+                                <td> {!! $client->keterangan !!}</td>
                                 <td>
                                     <a href="/delete-progress/{{ $client->name }}">
                                         Delete
