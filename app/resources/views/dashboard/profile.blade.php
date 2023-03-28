@@ -24,10 +24,10 @@
                     <th scope="row">Anggota sejak</th>
                     <td>{{ $user->created_at->diffForHumans() }}</td>
                 </tr>
-                {{-- <tr>
+                <tr>
                     <th scope="row">Foto</th>
                     <td><img src="{{ asset('storage/' . $user->image) }}" alt="{{ $user->name }}" width="150" height="150"></td>
-                </tr> --}}
+                </tr>
             </tbody>
         </table>
     </div>

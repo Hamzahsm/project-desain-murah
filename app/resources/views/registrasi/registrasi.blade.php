@@ -65,7 +65,7 @@
                         <img class="image-preview img-fluid mb-3 col-sm-5">
                         <input type="file" class="form-control" id="image" name="image" onChange="previewImage()">
                         @error('image')
-                            <div class="invalid-feedback">
+                            <div class="invalid-feedback"> 
                                 {{ $message }}
                             </div>
                         @enderror

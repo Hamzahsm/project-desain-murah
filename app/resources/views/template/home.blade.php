@@ -9,17 +9,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     {{-- bootstrap icon --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    {{-- css --}}
   </head>
-  <body>
+  <body> 
     {{-- header --}}
     @include('partials.header')
 
     {{-- body  --}}
-    @yield('container-home')
+    @yield('container')
 
     {{-- footer --}}
     @include('partials.footer')
-    {{-- <h1>Hello, world!</h1> --}}
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   </body>
 </html> 

@@ -1,6 +1,6 @@
 @extends('template.home')
 
-@section('container-home')
+@section('container')
 
     {{-- carousel --}}
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
@@ -15,7 +15,7 @@
                 <img src="./images/slider-2.jpg" class="d-block w-100 img-responsive img-fluid" alt="slider dua">
             </a>
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
+          <div class="carousel-item" data-bs-interval="2000"> 
             <a href="https://wa.link/pvuit1" target="_blank">
                 <img src="./images/slider-3.jpg" class="d-block w-100 img-responsive img-fluid" alt="slider tiga">
             </a>
@@ -36,15 +36,15 @@
         <h2 class="fw-bold mt-5 fs-1">STATISTIK HINGGA MARET 2023</h2>
         <div class="row align-items-start mt-3 mb-5">
             <div class="col-lg-3 p-3">
-                <h3 class="text-danger fs-2 fw-bold" >635+</h3>
+                <h3 class="text-danger fs-2 fw-bold" id="counter-1" >635+</h3>
                 <h5>Desain</h5>
             </div>
             <div class="col-lg-3 p-3">
-                <h3 class="text-danger fs-2 fw-bold">55+</h3>
+                <h3 class="text-danger fs-2 fw-bold" id="counter-2">55+</h3>
                 <h5>Project Desain</h5>
             </div>
             <div class="col-lg-3 p-3">
-                <h3 class="text-danger fs-2 fw-bold">30+</h3>
+                <h3 class="text-danger fs-2 fw-bold" id="counter-3">30+</h3>
                 <h5>Kota</h5>
             </div>
             <div class="col-lg-3 p-3">
@@ -53,7 +53,7 @@
                 </a>
             </div>
         </div>
-    </div>
+    </div> 
 
     {{-- why must us ? --}}
     <div class="container mt-5">
