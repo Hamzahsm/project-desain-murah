@@ -16,10 +16,11 @@ return new class extends Migration
             $table->string('name');
             $table->string('username');
             $table->string('image')->nullable();
-            // $table->string('number')->unique();
-            $table->string('number');
-            // $table->string('email')->unique();
-            $table->string('email');
+            $table->string('number')->unique();
+            // $table->string('number');
+            $table->string('email')->unique();
+            // $table->string('email');
+            $table->string('referral')->unique();
             $table->boolean('is_owner')->default(false); 
             $table->boolean('is_admin')->default(false);
             $table->string('komisi')->nullable();

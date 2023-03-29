@@ -1,4 +1,4 @@
-<footer class="bg-secondary bg-opacity-10 p-5 mt-5">
+<footer class="bg-secondary bg-opacity-10 p-5 mt-5 atas">
       <div class="text-center">
           <div class="row">
             <div class="col-lg-3 text-start">
@@ -27,7 +27,7 @@
             </div>
             <div class="col-lg-3 text-start">
               <h6 class="mt-4">ALAMAT</h6>
-                <a href="#" class="nav-link">Perum Bumi Aura Blok M10 RT 3 RW 7 (Utara Pasar Ngemplak) Kel. Sembung Kec. Tulungagung Kab. Tulungagung</a>
+                <a href="#" class="nav-link">Jl. Panji Pulangjiwo No.1A, Krajan, Sutojayan, kec. Pakisaji, Kabupaten Malang, Jawa Timur 65162</a>
             </div>
           </div>
         </div>  

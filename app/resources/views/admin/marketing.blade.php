@@ -29,6 +29,7 @@
                                 <th scope="col">No</th>
                                 {{-- <th scope="col">Foto</th> --}}
                                 <th scope="col">Nama</th>
+                                <th scope="col">Referral</th>
                                 <th scope="col">Email</th>
                                 <th scope="col">No.Telepon</th>
                                 <th scope="col">Daftar sejak</th>
@@ -45,6 +46,7 @@
                                     <img src="{{ asset('storage/' . $user->image) }}" alt="{{ $user->name }}" width="100" height="100" class="img-fluid">
                                 </td> --}}
                                 <td>{{ $user->name }}</td>
+                                <td>{{ $user->referral }}</td>
                                 <td>{{ $user->email }}</td>
                                 <td>{{ $user->number }}</td>
                                 <td>{{ $user->created_at->diffForHumans() }}</td>

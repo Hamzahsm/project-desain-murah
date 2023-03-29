@@ -19,7 +19,7 @@ class Client extends Model
     }
 
     // public function referral(){
-    //     return $this->belongsTo(Referral::class, 'referral_id');
+    //     return $this->belongsTo(Referral::class, 'referral_id'); 
     // } 
 
 }

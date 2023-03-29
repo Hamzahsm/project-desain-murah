@@ -32,7 +32,7 @@
     </div>
 
     {{-- statistic --}}
-    <div class="container text-center ">
+    <div class="container text-center atas">
         <h2 class="fw-bold mt-5 fs-1">STATISTIK HINGGA MARET 2023</h2>
         <div class="row align-items-start mt-3 mb-5">
             <div class="col-lg-3 p-3">
@@ -56,12 +56,12 @@
     </div> 
 
     {{-- why must us ? --}}
-    <div class="container mt-5">
-        <div class="row align-items-start mt-5">
-            <div class="col-lg-6 p-3">
+    <div class="container mt-5 atas">
+        <div class="row align-items-start mt-5 atas">
+            <div class="col-lg-6 p-3 atas">
                 <img src="./images/square-desain-murah-id.jpg" alt="desain murah id poster" class="rounded-3 img-fluid img-responsive">
             </div>
-            <div class="col-lg-6 p-3">
+            <div class="col-lg-6 p-3 atas">
                 <h6 class="text-uppercase">Desainmurah.id</h6>
                 <h3 class="mt-3">Kenapa Harus Desainmurah.id</h3>
                 <ul class="mt-4">
@@ -84,10 +84,10 @@
     </div>
 
     {{-- layanan jasa --}}
-    <div class="container mt-5">
-        <h2 class="text-uppercase text-center fw-bold">Layanan Jasa</h2>
+    <div class="container mt-5 atas">
+        <h2 class="text-uppercase text-center fw-bold atas">Layanan Jasa</h2>
 
-        <div class="row text-center mt-5">
+        <div class="row text-center mt-2">
             <div class="col-lg-4 mt-4">
                 <div class="border border-2 py-5 rounded shadow bg-body-secondary bg-gradient">
                     <a href="#" class="text-decoration-none text-secondary">
@@ -165,12 +165,13 @@
                     </div>
                 </div>
             </div>
+        </div>
     </div>
 
     {{-- Tentang Kami --}}
-    <div class="container mt-5">
-        <div class="text-center mt-5">
-            <h2 class="text-center text-uppercase">Tentang Kami</h2>
+    <div class="container mt-5 atas">
+        <div class="text-center mt-5 atas">
+            <h2 class="text-center text-uppercase atas fw-bold">Tentang Kami</h2>
             <p>Desainmurah.id merupakan bagian dari Griya Bangun Studio yang hadir sebagai rekan solusi kebutuhan desain dan arsitek professional dan terpercaya.</p>
         </div>
         <div>
@@ -205,13 +206,13 @@
                     <div class="accordion-body">AHU GRIYA BANGUN INDONESIA : AHU-0009656.AH.01.01.TAHUN2022</div>
                   </div>
                 </div>
-              </div>
+            </div>
         </div>
     </div>
 
     {{-- harga desain --}}
-    <div class="container mt-5">
-        <h2 class="text-center text-uppercase">Pricelist</h2>
+    <div class="container mt-5 atas">
+        <h2 class="text-center text-uppercase fw-bold atas">Pricelist</h2>
         <div class="row my-5">
             {{-- paket satu --}}
             <div class="col-lg-3 mt-4">
@@ -323,35 +324,35 @@
     </div>
 
     {{-- portofolio --}}
-    <div class="container mt-5">
-        <h2 class="text-center fw-bold">PORTOFOLIO</h2>
-        <div class="row mt-5">
+    <div class="container mt-5 atas">
+        <h2 class="text-center fw-bold atas">PORTOFOLIO</h2>
+        <div class="row mt-2">
             {{-- 1 --}}
             <div class="col-lg-4 mt-4">
-                <img src="./images/portofolio/1.jpg" alt="portofolio-desainmurah.id" class="img-fluid img-responsive">
+                <img src="./images/portofolio/1.jpg" alt="portofolio-desainmurah.id" class="img-fluid img-responsive rounded shadow">
             </div>
             {{-- 2 --}}
             <div class="col-lg-4 mt-4">
-                <img src="./images/portofolio/2.jpg" alt="portofolio-desainmurah.id" class="img-fluid img-responsive">
+                <img src="./images/portofolio/2.jpg" alt="portofolio-desainmurah.id" class="img-fluid img-responsive rounded shadow">
             </div>
             {{-- 3 --}}
             <div class="col-lg-4 mt-4">
-                <img src="./images/portofolio/3.jpg" alt="portofolio-desainmurah.id" class="img-fluid img-responsive">
+                <img src="./images/portofolio/3.jpg" alt="portofolio-desainmurah.id" class="img-fluid img-responsive rounded shadow">
             </div>
         </div>
 
         <div class="row">
             {{-- 4 --}}
             <div class="col-lg-4 mt-4">
-                <img src="./images/portofolio/5.jpg" alt="portofolio-desainmurah.id" class="img-fluid img-responsive">
+                <img src="./images/portofolio/5.jpg" alt="portofolio-desainmurah.id" class="img-fluid img-responsive rounded shadow">
             </div>
             {{-- 5 --}}
             <div class="col-lg-4 mt-4">
-                <img src="./images/portofolio/6.jpg" alt="portofolio-desainmurah.id" class="img-fluid img-responsive">
+                <img src="./images/portofolio/6.jpg" alt="portofolio-desainmurah.id" class="img-fluid img-responsive rounded shadow">
             </div>
             {{-- 6 --}}
             <div class="col-lg-4 mt-4">
-                <img src="./images/portofolio/7.jpg" alt="portofolio-desainmurah.id" class="img-fluid img-responsive">
+                <img src="./images/portofolio/7.jpg" alt="portofolio-desainmurah.id" class="img-fluid img-responsive rounded shadow">
             </div>
         </div>
 
@@ -363,9 +364,9 @@
     </div>
 
     {{-- testimoni --}}
-    <div class="container mt-5">
-        <h2 class="text-center text-uppercase">Testimoni</h2>
-        <div class="row mt-5">
+    <div class="container mt-5 atas">
+        <h2 class="text-center text-uppercase fw-bold atas">Testimoni</h2>
+        <div class="row mt-2">
             <div class="col-lg-3 text-center mt-4">
                 <img src="./images/testimoni/1.webp" alt="" class="img-fluid img-responsive">
                 <p class="mt-3 text-center text-secondary">“Proses pengerjaan memuaskan, harga terjangakau”</p>
@@ -409,4 +410,9 @@
         </div>
     </div>
 
+    {{-- payment --}}
+    <div class="container mt-5 atas">
+        <img src="images/payment2.png" alt="payment desainmurah.id" onmouseover="this.src='images/payment1.png';" onmouseout="this.src='images/payment2.png';" class="img-responsive img-fluid">
+    </div>
+ 
 @endsection 

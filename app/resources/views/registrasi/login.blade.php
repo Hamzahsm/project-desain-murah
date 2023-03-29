@@ -33,7 +33,7 @@
                     
                         <div class="form-group form-floating mb-3 mt-5">
                             <input type="text" class="form-control" name="username" value="{{ old('username') }}" placeholder="Username" required="required" autofocus>
-                            <label for="floatingName">Email or Username</label>
+                            <label for="floatingName"><i class="bi bi-person"></i> Email or Username</label>
                             @if ($errors->has('username'))
                                 <span class="text-danger text-left">{{ $errors->first('username') }}</span> 
                             @endif
@@ -41,7 +41,7 @@
                         
                         <div class="form-group form-floating mb-3">
                             <input type="password" class="form-control" name="password" value="{{ old('password') }}" placeholder="Password" required="required">
-                            <label for="floatingPassword">Password</label>
+                            <label for="floatingPassword"><i class="bi bi-key"></i> Password</label>
                             @if ($errors->has('password'))
                                 <span class="text-danger text-left">{{ $errors->first('password') }}</span>
                             @endif
@@ -56,7 +56,7 @@
                     
                     </form>
 
-                    <small class="d-block text-center mt-3 text-muted">Tidak memiliki akun ? <a href="/registrasi" class="text-decoration-none"> Daftar sekarang </a></small>
+                    <small class="d-block text-center mt-3 text-muted"><i class="bi bi-question-circle"></i> Tidak memiliki akun ? <a href="/registrasi" class="text-decoration-none"> Daftar sekarang </a></small>
                 </main>
             </div>
         </div>

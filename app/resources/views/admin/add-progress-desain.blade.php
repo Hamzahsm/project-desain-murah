@@ -25,6 +25,15 @@
                 </select>  
             </div> 
 
+            {{-- <div class="mb-3">
+                <label for="user" class="fw-bold"> Referral Code</label>
+                <select name="user_id" id="user" class="form-select mt-2">
+                    @foreach ($users as $user)
+                        <option value="{{ $user->referral }}" selected>{{ $user->referral }}</option>   
+                    @endforeach
+                </select>  
+            </div>  --}}
+
             <div class="mb-3">
                 <label for="name" class="fw-bold">Nama Klien</label>
                 <input type="text" class="form-control mt-2 @error('title') is-invalid @enderror" id="name" name="name" required>

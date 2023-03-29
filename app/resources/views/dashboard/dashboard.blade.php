@@ -18,9 +18,13 @@
                 <td>{{ $user->komisi }}</td>
                 <td>{{ $user->klaim }}</td>
                 <td>
+                  @if($user->komisi)
                     <a href="https://wa.link/mw8r93" class="nav-link text-success" target="_blank">
                       <i class="bi bi-hand-index-thumb"></i> Klaim Sekarang
                     </a>
+                    @else 
+                    <p class="text-danger fw-italic">Oops, tidak ada klien ,tidak ada komisi. Saatnya dapatkan klien !</p>
+                  @endif
                 </td>
               </tr>
             </tbody>
@@ -32,24 +36,30 @@
             <thead>
               <tr>
                 <th scope="col">No</th>
-                {{-- <th scope="col">Code Referral</th> --}}
-                <th scope="col">Project</th>
+                <th scope="col">Referral Code</th>
+                <th scope="col">Klien</th>
                 <th scope="col">Keterangan</th>
 
               </tr>
             </thead>
             <tbody>
-              @foreach ($clients as $client)
-              <tr>
-                <td>{{ $loop->iteration }}</td>
-                {{-- <td>{{ $client->referral->name }}</td> --}}
-                <td>{{ $client->name }}</td>
-                <td>{!! $client->keterangan !!}</td>
-              </tr> 
-            </tbody>
-            @endforeach
+              @if ($clients->count())
+                @foreach ($clients as $client)
+                  <tr>
+                    <td>{{ $loop->iteration }}</td>
+                    <td>{{ $client->user->referral }}</td>
+                    <td>{{ $client->name }}</td>
+                    <td>
+                        {!! $client->keterangan !!}
+                      </td>
+                  </tr> 
+                </tbody>
+                  @endforeach
+                  @else 
+                  <p class="text-center fw-italic text-danger">Oops, belum ada progres desain sama sekali. Saatnya untuk dapatkan klien pertama!</p> 
+                  @endif
         </table>
-    </div>
+    </div> 
 
 {{-- alur pelayanan desain --}}
 <div class="container my-5 text-center">
@@ -58,7 +68,13 @@
             <img src="../images/alur-pelayanan-2.png" alt="alur-pelayanan" class="img-fluid rounded">
         </div>
         <div class="col-lg-6">
-            <h5 class="mt-5"> <i class="bi bi-chat-text"></i> Memiliki Pertanyaan Lain ? Hubungi Admin dibawah ini</h5>
+            <h4 class="mt-5 text-uppercase fw-bold"><i class="bi bi-info-circle"></i> Pusat Bantuan</h4>
+            <a href="https://wa.link/ts603h" class="nav-link mt-3" target="_blank">
+              <button class="btn btn-info"><i class="bi bi-whatsapp"></i> Konsultasi Desain</button>
+            </a>
+            <a href="https://wa.link/ts603h" class="nav-link mt-3" target="_blank">
+              <button class="btn btn-primary"><i class="bi bi-whatsapp"></i> Finishing</button>
+            </a>
             <a href="https://wa.link/ts603h" class="nav-link mt-3" target="_blank">
               <button class="btn btn-success"><i class="bi bi-whatsapp"></i> Chat Admin</button>
             </a>

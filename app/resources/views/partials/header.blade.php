@@ -10,7 +10,8 @@
         <ul class="navbar-nav ms-auto mt-3 me-5">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
-              <i class="bi bi-person-check"></i> Hallo, {{ auth()->user()->name }}
+              <img src="{{ asset('storage/' . auth()->user()->image) }}" alt="{{ auth()->user()->name }}" width="20" height="20">
+               Hallo, {{ auth()->user()->name }}
             </a>
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="/dashboard/{{ auth()->user()->name }}"><i class="bi bi-window-fullscreen"></i> My Dashboard</a></li>

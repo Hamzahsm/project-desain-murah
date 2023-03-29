@@ -31,6 +31,7 @@ class RegistrasiController extends Controller
             'name' => 'required',
             'number' => 'required',
             'username' => 'required',
+            'referral' => 'required',
             'image' => 'image|file|max:1024', 
             'email' => 'required|email:dns',
             'password' => 'required|min:5|max:18' 
@@ -44,7 +45,7 @@ class RegistrasiController extends Controller
 
         // User::create($validatedDate); 
 
-        // return redirect('/login')->with('success', 'Registrasi Berhasil!'); 
+        // return redirect('/login')->with('success', 'Registrasi Berhasil!');  
         $user = User::Create($validatedDate);
 
         event(new Registered($user)); 
@@ -57,7 +58,7 @@ class RegistrasiController extends Controller
 
     // ke halaman verifikasi 
     public function linkVerification() {
-        return view ('registrasi.verification', [
+        return view ('registrasi.verification', [ 
             'title' => 'Verification'
         ]);
     }
