@@ -9,13 +9,13 @@
             </div>
             <div class="col-lg-3 text-start">
               <h6 class="mt-4">LAYANAN JASA</h6>
-              <a href="#" class="nav-link">Desain Rumah Mewah</a>
-              <a href="#" class="nav-link">Desain Rumah Minimalis</a>
-              <a href="#" class="nav-link">Desain Rumah Modern</a>
-              <a href="#" class="nav-link">Desain Gedung Kantor</a>
-              <a href="#" class="nav-link">Desain Kolam Koi</a>
-              <a href="#" class="nav-link">Desain Mall</a>
-              <a href="#" class="nav-link">Custom</a>
+              <a href="/jasa-desain-rumah-mewah" class="nav-link">Desain Rumah Mewah</a>
+              <a href="/jasa-desain-rumah-minimalis" class="nav-link">Desain Rumah Minimalis</a>
+              <a href="/jasa-desain-rumah-modern" class="nav-link">Desain Rumah Modern</a>
+              <a href="/jasa-desain-gedung-kantor" class="nav-link">Desain Gedung Kantor</a>
+              <a href="/jasa-kolam-koi" class="nav-link">Desain Kolam Koi</a>
+              <a href="/jasa-desain-mall" class="nav-link">Desain Mall</a>
+              <a href="/custom-desain" class="nav-link">Custom</a>
             </div>
             <div class="col-lg-3 text-start">
               <h6 class="mt-4">INFORMASI</h6>

@@ -7,6 +7,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\VerificationController;
 use App\Http\Controllers\UserDashborad;
 use App\Http\Controllers\SuperAdminController;
+use App\Http\Controllers\PagesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -58,3 +59,14 @@ Route::post('/update-komisi/{user:name}', [SuperAdminController::class, 'updateK
 Route::get('/progress-desain', [SuperAdminController::class, 'progressDesain'])->middleware('is.owner');
 Route::get('/add-progress-desain', [SuperAdminController::class, 'addProgressDesain'])->middleware('is.owner');
 Route::post('/add-progress', [SuperAdminController::class, 'addProgress'])->middleware('is.owner'); 
+
+
+// halaman-halaman
+
+Route::get('/jasa-kolam-koi', [PagesController::class, 'jasaKolamKoi']);
+Route::get('/jasa-desain-rumah-mewah', [PagesController::class, 'desainRumahMewah']);
+Route::get('/jasa-desain-rumah-minimalis', [PagesController::class, 'desainRumahMinimalis']);
+Route::get('/jasa-desain-rumah-modern', [PagesController::class, 'desainRumahModern']);
+Route::get('/jasa-desain-gedung-kantor', [PagesController::class, 'desainGedung']);
+Route::get('/jasa-desain-mall', [PagesController::class, 'desainMall']);
+Route::get('/custom-desain', [PagesController::class, 'customDesain']);
