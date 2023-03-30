@@ -59,6 +59,7 @@ Route::post('/update-komisi/{user:name}', [SuperAdminController::class, 'updateK
 Route::get('/progress-desain', [SuperAdminController::class, 'progressDesain'])->middleware('is.owner');
 Route::get('/add-progress-desain', [SuperAdminController::class, 'addProgressDesain'])->middleware('is.owner');
 Route::post('/add-progress', [SuperAdminController::class, 'addProgress'])->middleware('is.owner'); 
+Route::get('/edit-progress-desain/{client:name}', [SuperAdminController::class, 'editProgress'])->middleware('is.owner');
 
 
 // halaman-halaman

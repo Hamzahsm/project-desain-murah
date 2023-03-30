@@ -26,15 +26,17 @@
                         <a href="/add-progress-desain">
                             <i class="bi bi-plus-circle fs-3"></i>
                         </a>
-                        <table class="table table-hover table-bordered table-sm mt-3">
-                            <thead>
+                        <table class="table table-hover table-bordered table-sm mt-3 shadow">
+                            <thead class="table-info">
                             <tr>
                                 <th scope="col">No</th>
                                 {{-- <th scope="col">Code Referral</th> --}}
                                 <th scope="col">Nama Marketing</th>
                                 <th scope="col">Nama Klien</th>
                                 <th scope="col">Keterangan</th>
-                                <th scope="col">Update at</th>     
+                                <th scope="col">Created at</th>
+                                <th scope="col">Update at</th>   
+                                <th scope="col">Aksi</th>   
                             </tr>
                             </thead>
                             <tbody>
@@ -45,7 +47,13 @@
                                 <td>{{ $client->user->name }}</td>
                                 <td>{{ $client->name }}</td>
                                 <td> {!! $client->keterangan !!}</td>
+                                <td>{{ $client->created_at }}</td>
                                 <td>{{ $client->updated_at }}</td>
+                                <td>
+                                    <a href="/edit-progress-desain/{{ $client->name }}">
+                                        <i class="bi bi-pen ms-3"></i> Edit
+                                    </a>
+                                </td>
                                 </tr>   
                                 @endforeach
                             </tbody>

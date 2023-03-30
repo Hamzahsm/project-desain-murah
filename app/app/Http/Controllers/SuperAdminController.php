@@ -22,6 +22,7 @@ class SuperAdminController extends Controller
         ]);
     }
 
+    // show form
     public function editKomisi(User $user) {
         return view('admin.edit-komisi', [
             'title' => 'Edit Komisi - Desain Murah ID',
@@ -29,6 +30,7 @@ class SuperAdminController extends Controller
         ]); 
     }
 
+    // form handle
     public function updateKomisi(Request $request, User $user) {
         // return $request;
         $rules = $request->validate([
@@ -51,7 +53,7 @@ class SuperAdminController extends Controller
         ]);
     }
 
-    // form add progress
+    // show form
     public function addProgressDesain (User $user) {
         return view('admin.add-progress-desain', [
             'title' => 'Tambah Progress Desain',
@@ -59,7 +61,7 @@ class SuperAdminController extends Controller
         ]);
     }
 
-    // handle form add progress
+    // form handle
     public function addProgress(Request $request , Client $client) {
         // return $request;
         $validateData = $request->validate([
@@ -71,6 +73,15 @@ class SuperAdminController extends Controller
         Client::create($validateData);
 
         return redirect('/progress-desain')->with('success', 'Data Berhasil Ditambah !');  
+    }
+
+    // show form
+    public function editProgress(Client $client) {
+        return view('admin.edit-progress' , [
+            'title' => 'Edit Progres Desain Klien - Desain Murah ID',
+            'client' => $client,
+            'users' => User::all()
+        ]);
     }
 
 

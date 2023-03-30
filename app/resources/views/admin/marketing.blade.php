@@ -23,8 +23,8 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                             </div>
                         @endif
-                        <table class="table table-hover table-bordered table-sm">
-                            <thead>
+                        <table class="table table-hover table-bordered table-sm shadow">
+                            <thead class="table-info">
                             <tr>
                                 <th scope="col">No</th>
                                 {{-- <th scope="col">Foto</th> --}}
@@ -32,7 +32,7 @@
                                 <th scope="col">Referral</th>
                                 <th scope="col">Email</th>
                                 <th scope="col">No.Telepon</th>
-                                <th scope="col">Daftar sejak</th>
+                                <th scope="col">Tgl Daftar</th>
                                 <th scope="col">Jumlah Komisi</th>
                                 <th scope="col">Klaim Komisi</th>
                                 <th scope="col">Last Update</th>
@@ -50,16 +50,23 @@
                                 <td>{{ $user->referral }}</td>
                                 <td>{{ $user->email }}</td>
                                 <td>{{ $user->number }}</td>
-                                <td>{{ $user->created_at->diffForHumans() }}</td>
+                                {{-- <td>{{ $user->created_at->diffForHumans() }}</td> --}}
+                                <td>{{ $user->created_at}}</td>
                                 <td>{{ $user->komisi }}</td>
                                 <td>{{ $user->klaim }}</td>
-                                <td>{{ $user->updated_at }}</td>
+                                <td>
+                                    @if($user->komisi)
+                                        {{ $user->updated_at }}
+                                    @else 
+                                        <p class="fst-italic text-danger"><i class="bi bi-exclamation-triangle"></i> Belum diupdate</p>
+                                    @endif
+                                </td>
                                 {{-- <td>
                                     <a href="/delete-user/{{ $user->username }}"><button class="btn btn-danger" onClick="return confirm('apakah anda yakin?')">Hapus</button></a>
                                 </td>  --}}
                                 <td>
                                     <a href="/edit-komisi/{{ $user->name }}">
-                                        Edit
+                                        <i class="bi bi-pen ms-3"></i> Edit
                                     </a>
                                 </td>
                                 </tr>   

@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     {{-- link dashboard --}}
     <link rel="stylesheet" href="../css/dashboard.css"> 
+    {{-- link trix js --}}
+    <link rel="stylesheet" type="text/css" href="/css/trix.css">
+    <script type="text/javascript" src="/js/trix.js"></script>
   </head>
   <body>
     <main>
