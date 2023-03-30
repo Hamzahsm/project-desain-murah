@@ -34,7 +34,7 @@
                                 <th scope="col">Nama Marketing</th>
                                 <th scope="col">Nama Klien</th>
                                 <th scope="col">Keterangan</th>
-                                <th scope="col">Aksi</th>      
+                                <th scope="col">Update at</th>     
                             </tr>
                             </thead>
                             <tbody>
@@ -45,14 +45,11 @@
                                 <td>{{ $client->user->name }}</td>
                                 <td>{{ $client->name }}</td>
                                 <td> {!! $client->keterangan !!}</td>
-                                <td>
-                                    <a href="/delete-progress/{{ $client->name }}">
-                                        Delete
-                                    </a>
-                                </td>
+                                <td>{{ $client->updated_at }}</td>
                                 </tr>   
                                 @endforeach
                             </tbody>
+
                         </table>
                     </div>
                 </div>

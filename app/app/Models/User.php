@@ -8,7 +8,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 use App\Models\Client;
-use App\Models\Referral;
+// use App\Models\Referral;
 
 class User extends Authenticatable implements MustVerifyEmail
 {
@@ -51,14 +51,18 @@ class User extends Authenticatable implements MustVerifyEmail
 
     // membuat eloquent relationship dengan tabel user
     public function client(){
-        return $this->belongsTo(Client::class, 'user_id');
+        return $this->belongsTo(Client::class);
     }
+
+    // public function client(){
+    //     return $this->hasMany(Client::class);
+    // }
 
 
     // membuat eloquent relationship dengan tabel user
     // public function referral(){
     //     return $this->belongsTo(Referral::class, 'referral_id');
-    // }
+    // } 
   
 
 }

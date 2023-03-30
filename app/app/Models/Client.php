@@ -5,21 +5,25 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\User;
-use App\Models\Referral;
+// use App\Models\Referral;
 
 class Client extends Model
 {
     use HasFactory;
     // field lain boleh diisi, id jangan
     protected $guarded = ['id'];
+    protected $with = ['user'];
 
     // eloquent relationship dengan model user, satu referral hanya akan dimiliki oleh 1 user
     public function user(){
         return $this->belongsTo(User::class, 'user_id');
     }
-
+    
+    // public function user(){
+    //     return $this->hasMany(User::class, 'user_id');
+    // }
     // public function referral(){
     //     return $this->belongsTo(Referral::class, 'referral_id'); 
-    // } 
+    // }  
 
 }

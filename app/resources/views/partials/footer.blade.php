@@ -19,11 +19,11 @@
             </div>
             <div class="col-lg-3 text-start">
               <h6 class="mt-4">INFORMASI</h6>
-              <a href="#" class="nav-link">Blog</a>
-              <a href="#" class="nav-link">Harga Desain</a>
-              <a href="#" class="nav-link">Kontak Kami</a>
-              <a href="#" class="nav-link">Portofolio Desain</a>
-              <a href="#" class="nav-link">Tentang Kami</a>
+              <a href="https://griyabangunindonesia.com/blog/" target="_blank" class="nav-link">Blog</a>
+              <a href="/harga-desain" class="nav-link">Harga Desain</a>
+              <a href="/kontak-kami" class="nav-link">Kontak Kami</a>
+              <a href="/portofolio-desain" class="nav-link">Portofolio Desain</a>
+              <a href="/tentang-kami" class="nav-link">Tentang Kami</a> 
             </div>
             <div class="col-lg-3 text-start">
               <h6 class="mt-4">ALAMAT</h6>

@@ -78,7 +78,9 @@
                         <p class="fs-5">Garansi kepuasan Anda, A design you love, revisi desain tidak terbatas.</p>
                     </li>
                 </ul>
-                <button class="btn btn-success px-3 rounded-5 mt-3"> <i class="bi bi-whatsapp"></i> Konsultasi GRATIS !</button>
+                <a href="https://wa.link/1a5pi5" target="_blank">
+                    <button class="btn btn-success px-3 rounded-5 mt-3"> <i class="bi bi-whatsapp"></i> Konsultasi GRATIS !</button>
+                </a>
             </div>
         </div>
     </div>
@@ -89,7 +91,7 @@
 
         <div class="row text-center mt-2">
             <div class="col-lg-4 mt-4">
-                <div class="border border-2 py-5 rounded shadow bg-body-secondary bg-gradient">
+                <div class="border border-2 py-5 rounded shadow bg-body-secondary bg-gradient bg-opacity-50">
                     <a href="#" class="text-decoration-none text-secondary">
                         <i class="bi bi-house-heart fs-1"></i>
                         <h6>Desain Interior</h6>
@@ -101,7 +103,7 @@
                 </div>
             </div>
             <div class="col-lg-4 mt-4">
-                <div class="border border-2 py-5 rounded shadow bg-body-secondary bg-gradient">
+                <div class="border border-2 py-5 rounded shadow bg-body-secondary bg-gradient bg-opacity-50">
                     <a href="#" class="text-decoration-none text-secondary">
                         <i class="bi bi-house-gear fs-1"></i>
                         <h6>Desain Eksterior</h6>
@@ -113,7 +115,7 @@
                 </div>
             </div>
             <div class="col-lg-4 mt-4">
-                <div class="border border-2 py-5 rounded shadow bg-body-secondary bg-gradient">
+                <div class="border border-2 py-5 rounded shadow bg-body-secondary bg-gradient bg-opacity-50">
                     <a href="#" class="text-decoration-none text-secondary">
                         <i class="bi bi-map fs-1"></i>
                         <h6>Denah</h6>
@@ -129,7 +131,7 @@
         <div class="">
             <div class="row text-center">
                 <div class="col-lg-4 mt-4">
-                    <div class="border border-2 py-5 rounded shadow bg-body-secondary bg-gradient">
+                    <div class="border border-2 py-5 rounded shadow bg-body-secondary bg-gradient bg-opacity-50">
                         <a href="#" class="text-decoration-none text-secondary">
                             <i class="bi bi-laptop fs-1"></i>
                             <h6>Desain 2D & 3D</h6>
@@ -141,7 +143,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 mt-4">
-                    <div class="border border-2 py-5 rounded shadow bg-body-secondary bg-gradient">
+                    <div class="border border-2 py-5 rounded shadow bg-body-secondary bg-gradient bg-opacity-50">
                         <a href="#" class="text-decoration-none text-secondary">
                             <i class="bi bi-file-earmark-text fs-1"></i>
                             <h6>Rencana Anggaran Biaya (RAB)</h6>
@@ -153,7 +155,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 mt-4">
-                    <div class="border border-2 py-5 rounded shadow bg-body-secondary bg-gradient">
+                    <div class="border border-2 py-5 rounded shadow bg-body-secondary bg-gradient bg-opacity-50">
                         <a href="#" class="text-decoration-none text-secondary">
                             <i class="bi bi-person-video3 fs-1"></i>
                             <h6>Custom</h6>
@@ -234,7 +236,7 @@
                     <p class="mt-3"><i class="bi bi-x fw-bold text-danger"></i> 3D Desain</p>
                     <p class="mt-3"><i class="bi bi-x fw-bold text-danger"></i> Rencana Anggaran Biaya (RAB)</p>
                     <div class="text-center mt-4">
-                        <a href="#">
+                        <a href="https://wa.link/1a5pi5" target="_blank">
                             <button class="btn btn-success px-3 rounded-5"> <i class="bi bi-whatsapp"></i> Konsultasi GRATIS !</button>
                         </a>
                     </div>
@@ -260,7 +262,7 @@
                     <p class="mt-3"><i class="bi bi-x fw-bold text-danger"></i> 3D Desain</p>
                     <p class="mt-3"><i class="bi bi-x fw-bold text-danger"></i> Rencana Anggaran Biaya (RAB)</p>
                     <div class="text-center mt-4">
-                        <a href="#">
+                        <a href="https://wa.link/1a5pi5" target="_blank">
                             <button class="btn btn-success px-3 rounded-5"> <i class="bi bi-whatsapp"></i> Konsultasi GRATIS !</button>
                         </a>
                     </div>
@@ -287,7 +289,7 @@
                     <p class="mt-3"><i class="bi bi-check-lg fw-bold text-warning"></i> 3D Desain</p>
                     <p class="mt-3"><i class="bi bi-x fw-bold text-danger"></i> Rencana Anggaran Biaya (RAB)</p>
                     <div class="text-center mt-4">
-                        <a href="#">
+                        <a href="https://wa.link/1a5pi5" target="_blank">
                             <button class="btn btn-danger px-3 rounded-5"> <i class="bi bi-whatsapp"></i> Konsultasi GRATIS !</button>
                         </a>
                     </div>
@@ -314,7 +316,7 @@
                     <p class="mt-3"><i class="bi bi-check-lg fw-bold text-success"></i> 3D Desain</p>
                     <p class="mt-3"><i class="bi bi-check-lg fw-bold text-success"></i> Rencana Anggaran Biaya (RAB)</p>
                     <div class="text-center mt-4">
-                        <a href="#">
+                        <a href="https://wa.link/1a5pi5" target="_blank">
                             <button class="btn btn-success px-3 rounded-5"> <i class="bi bi-whatsapp"></i> Konsultasi GRATIS !</button>
                         </a>
                     </div>
@@ -357,7 +359,7 @@
         </div>
 
         <div class="text-center mt-5">
-            <a href="#">
+            <a href="https://griyabangunindonesia.com/portofolio/jasa-desain/">
                 <button class="btn btn-danger px-3 rounded-5"><i class="bi bi-images"></i> Full Portofolio</button>
             </a>
         </div>
@@ -408,7 +410,7 @@
                 <p class="fw-italic mt-2">Klien</p>
             </div>
         </div>
-    </div>
+    </div> 
 
     {{-- payment --}}
     <div class="container mt-5 atas">

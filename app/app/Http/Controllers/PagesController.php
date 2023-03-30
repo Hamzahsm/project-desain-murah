@@ -49,6 +49,30 @@ class PagesController extends Controller
         ]);
     }
 
+    function tentangKami() {
+        return view('pages.tentang-kami', [
+            'title' => 'Tentang Kami - Profil Desain Murah ID'
+        ]);
+    } 
+
+    function hargaDesain() {
+        return view('pages.harga-desain', [
+            'title' => 'Harga Desain - Desain Murah ID'
+        ]);
+    } 
+
+    function kontakKami() {
+        return view('pages.kontak-kami', [
+            'title' => 'Kontak Kami - Desain Murah ID'
+        ]);
+    } 
+
+    function portofolioDesain() {
+        return view('pages.portofolio-desain', [
+            'title' => 'Portofolio Desain - Desain Murah ID'
+        ]);
+    } 
+
 
 
 

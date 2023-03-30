@@ -48,7 +48,7 @@ Route::post('/email/resend', [VerificationController::class, 'resend'])->name('v
 // dashboard user
 Route::resource('/user', UserDashborad::class);
 Route::get('/my-profile/{user:name}', [UserDashborad::class, 'myProfile']); 
-Route::get('/dashboard/{user:name}', [UserDashborad::class, 'myDashboard']); 
+Route::get('/dashboard/{user:name}', [UserDashborad::class, 'myDashboard'])->middleware('auth'); 
 // Route::get('/my-profile/{user:name}', [UserDashborad::class, 'myProfile'])->middleware('auth'); 
 
 // SuperAdmin 
@@ -70,3 +70,7 @@ Route::get('/jasa-desain-rumah-modern', [PagesController::class, 'desainRumahMod
 Route::get('/jasa-desain-gedung-kantor', [PagesController::class, 'desainGedung']);
 Route::get('/jasa-desain-mall', [PagesController::class, 'desainMall']);
 Route::get('/custom-desain', [PagesController::class, 'customDesain']);
+Route::get('/tentang-kami', [PagesController::class, 'tentangKami']);
+Route::get('/harga-desain', [PagesController::class, 'hargaDesain']);
+Route::get('/kontak-kami', [PagesController::class, 'kontakKami']);
+Route::get('/portofolio-desain', [PagesController::class, 'portofolioDesain']);

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
-use App\Models\Referral;
+// use App\Models\Referral;
 use App\Models\Client;
 
 class SuperAdminController extends Controller
@@ -42,11 +42,12 @@ class SuperAdminController extends Controller
     } 
 
     // index page progress desain
-    public function progressDesain(Client $client) {
+    public function progressDesain(Client $client, User $user) {
         return view('admin.progress-desain', [
             'title' => 'Progress Desain - Desain Murah ID',
             // 'users' => User::where('is_owner', false)->get()
-            'clients' => $client::all() 
+            'clients' => Client::all() 
+            // 'clients' => Client::latest()->get()
         ]);
     }
 

@@ -35,6 +35,7 @@
                                 <th scope="col">Daftar sejak</th>
                                 <th scope="col">Jumlah Komisi</th>
                                 <th scope="col">Klaim Komisi</th>
+                                <th scope="col">Last Update</th>
                                 <th scope="col">Aksi</th>      
                             </tr>
                             </thead>
@@ -52,6 +53,7 @@
                                 <td>{{ $user->created_at->diffForHumans() }}</td>
                                 <td>{{ $user->komisi }}</td>
                                 <td>{{ $user->klaim }}</td>
+                                <td>{{ $user->updated_at }}</td>
                                 {{-- <td>
                                     <a href="/delete-user/{{ $user->username }}"><button class="btn btn-danger" onClick="return confirm('apakah anda yakin?')">Hapus</button></a>
                                 </td>  --}}

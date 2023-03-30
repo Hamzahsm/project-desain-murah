@@ -83,7 +83,7 @@ class UserDashborad extends Controller
             'user' => $user,
             // 'clients' => $user->client->user_id
             // 'clients' => Client::all()
-            'clients' => Client::where('user_id', auth()->user()->id)->latest()->get(),
+            'clients' => Client::where('user_id', auth()->user()->id)->latest()->get(), 
         ]); 
     }  
 

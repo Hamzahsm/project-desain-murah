@@ -28,9 +28,20 @@
                     <th scope="row">Anggota sejak</th>
                     <td>{{ $user->created_at->diffForHumans() }}</td>
                 </tr>
+
                 <tr>
                     <th scope="row">Foto</th>
                     <td><img src="{{ asset('storage/' . $user->image) }}" alt="{{ $user->name }}" width="70" height="70"></td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Jumlah Komisi Yang Berhasil didapat</th>
+                    <td> @if($user->komisi)
+                        {{ $user->komisi }}
+                        @else 
+                        <p class="text-danger">Oopps, nampaknya Anda belum mendapatkan klien. Saatnya dapatkan klien!</p>
+                        @endif
+                    </td>
                 </tr>
             </tbody>
         </table>
