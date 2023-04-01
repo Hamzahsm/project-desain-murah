@@ -5,7 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Client;
-use App\Models\Referral;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Storage;
 
 class UserDashborad extends Controller
 {
@@ -17,7 +18,7 @@ class UserDashborad extends Controller
         //
         return view('dashboard.index', [
             'title' => 'User Dashboard',
-        ]); 
+        ]);  
     }
 
     /**
@@ -86,5 +87,41 @@ class UserDashborad extends Controller
             'clients' => Client::where('user_id', auth()->user()->id)->latest()->get(), 
         ]); 
     }  
+
+    // show form edit profile
+    public function editProfile(User $user) {
+        return view('dashboard.edit-profile', [
+            'title' => 'Edit My Profile - Desain Murah ID',
+            'user' => $user
+        ]);
+    }
+
+    // handle form
+    public function updateProfile (Request $request, User $user) {
+        $rules = $request->validate([
+            'name' => 'required',
+            'number' => 'required',
+            'username' => 'required',
+            'referral' => 'required',
+            'image' => 'file|max:1024', 
+            'email' => 'required|email:dns',
+        ]);
+
+        // $validatedData = $request->validate($rules);
+
+        // validasi gambar
+        if($request->file('image')) {
+            // kalau ada gambar baru, hapus dulu yang lama, terus ganti yang baru
+            if($request->oldImage) {
+                Storage::delete($request->oldImage);
+            }
+            $rules['image'] = $request->file('image')->store('foto-user');
+        } 
+
+        // User::where('id', $user->id)->update($rules);
+        User::where('id', $user->id)->update($rules);
+
+        return redirect('/')->with('success', 'Data Profile Berhasil Diupdate!');
+    }
 
 }

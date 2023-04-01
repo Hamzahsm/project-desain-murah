@@ -23,9 +23,23 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                             </div>
                         @endif
-                        <a href="/add-progress-desain">
-                            <i class="bi bi-plus-circle fs-3"></i>
-                        </a>
+
+                        {{-- fitur search dan tambah progress desain --}}
+                         <div class="col-md-3 d-flex mt-4">
+                            <a href="/add-progress-desain">
+                                <i class="bi bi-plus-circle fs-3"></i>
+                            </a>
+
+                            <form action="/progress-desain" method="GET">
+                                <div class="input-group mb-3 ms-4">
+                                    <input type="text" class="form-control" placeholder="Nama klien" name="search" value="{{ request('search') }}">
+                                        <button class="btn btn-primary" type="submit"><i class="bi bi-search"></i></button>
+                                </div>
+                            </form>
+                        </div>
+
+                        {{-- mulai penampilan table --}}
+                        @if($clients->count())
                         <table class="table table-hover table-bordered table-sm mt-3 shadow">
                             <thead class="table-info">
                             <tr>
@@ -57,11 +71,14 @@
                                 </tr>   
                                 @endforeach
                             </tbody>
-
                         </table>
+                        @else 
+                        <p class="fst-italic text-secondary">Pencarian tidak ditemukan.</p>
+                        @endif
                     </div>
                 </div>
             </main>
         </div>
+
     </div>
 @endsection

@@ -38,7 +38,7 @@ class RegistrasiController extends Controller
         ]);
 
         if($request->file('image')) {
-            $validatedDate['image'] = $request->file('image')->store('foto-user'); 
+            $validatedDate['image'] = $request->file('image')->store('foto-user');  
         }
 
         $validatedDate['password'] = bcrypt($validatedDate['password']); 

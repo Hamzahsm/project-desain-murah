@@ -10,7 +10,8 @@
     {{-- bootstrap icon --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     {{-- link dashboard --}}
-    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    {{-- <script src="js/dashboard.js"></script> --}}
   </head>
   <body>
     {{-- header --}}

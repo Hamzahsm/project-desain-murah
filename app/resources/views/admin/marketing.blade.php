@@ -4,12 +4,11 @@
         <div class="row">
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
                 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 mt-4 border-bottom">
-                <h3 class="text-secondary text-uppercase">Daftar Marketing</h3>
+                <h3 class="text-secondary text-uppercase">Marketing</h3>
                 </div>
-
             {{-- body --}}
                 <div>
-                    <div class="table-responsive col-lg-10">
+                    <div class="table-responsive col-lg-10"> 
                         {{-- alert --}}
                         @if (session()->has('success'))
                         <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -22,12 +21,23 @@
                                 {{ session('deleteUser') }}
                                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                             </div>
-                        @endif
-                        <table class="table table-hover table-bordered table-sm shadow">
+                        @endif 
+                        
+                        {{-- fitur search --}}
+                        <div class="col-md-3 mt-4">
+                            <form action="/daftar-marketing" method="GET">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Cari Marketing" name="search" value="{{ request('search') }}">
+                                    <button class="btn btn-primary" type="submit"><i class="bi bi-search"></i></button>
+                                </div>
+                            </form>
+                        </div>
+
+                        @if($users->count())
+                        <table class="table table-hover table-bordered table-sm shadow mt-4">
                             <thead class="table-info">
                             <tr>
                                 <th scope="col">No</th>
-                                {{-- <th scope="col">Foto</th> --}}
                                 <th scope="col">Nama</th>
                                 <th scope="col">Referral</th>
                                 <th scope="col">Email</th>
@@ -73,6 +83,10 @@
                                 @endforeach
                             </tbody>
                         </table>
+                        {{-- jika pencarian tidak ditemukan --}}
+                        @else 
+                        <p class="fst-italic text-secondary">Pencarian tidak ditemukan.</p>
+                        @endif
                     </div>
                 </div>
             </main>

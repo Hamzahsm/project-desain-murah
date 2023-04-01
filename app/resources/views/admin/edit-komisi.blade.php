@@ -10,7 +10,7 @@
                 <label for="title">Jumlah Komisi</label>
                 <input type="text" class="form-control mt-2 @error('title') is-invalid @enderror" id="komisi" name="komisi" required value="{{ old('komisi', $user->komisi) }}">
                 @error('komisi')
-                <div class="invalid-feedback">
+                <div class="invalid-feedback"> 
                     {{ $message }}
                 </div>
                 @enderror

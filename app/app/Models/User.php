@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
@@ -29,6 +30,7 @@ class User extends Authenticatable implements MustVerifyEmail
     // ];
     protected $guarded = ['id']; 
 
+
     /**
      * The attributes that should be hidden for serialization.
      *
@@ -53,16 +55,5 @@ class User extends Authenticatable implements MustVerifyEmail
     public function client(){
         return $this->belongsTo(Client::class);
     }
-
-    // public function client(){
-    //     return $this->hasMany(Client::class);
-    // }
-
-
-    // membuat eloquent relationship dengan tabel user
-    // public function referral(){
-    //     return $this->belongsTo(Referral::class, 'referral_id');
-    // } 
-  
 
 }

@@ -49,7 +49,8 @@ Route::post('/email/resend', [VerificationController::class, 'resend'])->name('v
 Route::resource('/user', UserDashborad::class);
 Route::get('/my-profile/{user:name}', [UserDashborad::class, 'myProfile']); 
 Route::get('/dashboard/{user:name}', [UserDashborad::class, 'myDashboard'])->middleware('auth'); 
-// Route::get('/my-profile/{user:name}', [UserDashborad::class, 'myProfile'])->middleware('auth'); 
+Route::get('/edit-profile/{user:name}', [UserDashborad::class, 'editProfile'])->middleware('auth');
+Route::post('/update-profile/{user:name}', [UserDashborad::class, 'updateProfile'])->middleware('auth');
 
 // SuperAdmin 
 Route::get('/super-admin', [SuperAdminController::class, 'index'])->middleware('is.owner'); 
@@ -60,6 +61,7 @@ Route::get('/progress-desain', [SuperAdminController::class, 'progressDesain'])-
 Route::get('/add-progress-desain', [SuperAdminController::class, 'addProgressDesain'])->middleware('is.owner');
 Route::post('/add-progress', [SuperAdminController::class, 'addProgress'])->middleware('is.owner'); 
 Route::get('/edit-progress-desain/{client:name}', [SuperAdminController::class, 'editProgress'])->middleware('is.owner');
+Route::post('/update-progress/{client:name}', [SuperAdminController::class, 'updateProgress'])->middleware('is.owner');
 
 
 // halaman-halaman

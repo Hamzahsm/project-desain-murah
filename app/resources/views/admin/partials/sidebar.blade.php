@@ -22,7 +22,7 @@
         <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted text-uppercase">
             <span>MARKETING</span>
             <a class="link-secondary" href="#" aria-label="Add a new report">
-              <span data-feather="plus-circle" class="align-text-bottom"></span>
+              <span data-feather="plus-circle" class="align-text-bottom"></span> 
             </a>
           </h6>
           <ul class="nav flex-column mb-2">
@@ -57,16 +57,11 @@
       </h6>
       <ul class="nav flex-column mb-2 ms-auto">
         <li class="nav-item dropdown">
-          {{-- <a class="nav-link" href="#">
-            <span><i class="fa-solid fa-right-from-bracket"></i> Logout</span>
-          </a> --}}
           <form action="/logout" method="POST">
             @csrf
             <button type="submit" class="dropdown-item ms-3 mt-2"><i class="bi bi-box-arrow-right"></i> Logout</button>
           </form>
         </li>
       </ul>
-
-
     </div>
   </nav>

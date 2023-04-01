@@ -11,17 +11,28 @@ class SuperAdminController extends Controller
 {
     public function index() {
         return view('admin.index', [
-            'title' => 'Admin'
-        ]);
+            'title' => 'Admin',
+            'users' => User::all(),
+            'clients' => Client::all()
+        ]); 
     }
 
+    // show all marketing
     public function marketing() {
+
+        $users = User::latest();
+
+        if(request('search')) {
+            $users->where('name', 'like', '%' . request('search') . '%');
+        }
+
         return view('admin.marketing', [
-            'title' => 'Daftar Marketing | Desain Murah',
-            'users' => User::where('is_owner', false)->get()
+            'title' => 'Daftar Marketing - Desain Murah',
+            // 'users' => User::where('is_owner', false)->get() 
+            'users' => $users->get()
         ]);
     }
-
+    
     // show form
     public function editKomisi(User $user) {
         return view('admin.edit-komisi', [
@@ -44,12 +55,18 @@ class SuperAdminController extends Controller
     } 
 
     // index page progress desain
-    public function progressDesain(Client $client, User $user) {
+    public function progressDesain(Client $client) {
+
+        $clients = Client::latest();
+
+        if(request('search')) {
+            $clients->where('name', 'like', '%' . request('search') . '%');
+        }
+
         return view('admin.progress-desain', [
             'title' => 'Progress Desain - Desain Murah ID',
-            // 'users' => User::where('is_owner', false)->get()
-            'clients' => Client::all() 
-            // 'clients' => Client::latest()->get()
+            // 'clients' => Client::all() 
+            'clients' => $clients->get()
         ]);
     }
 
@@ -84,5 +101,16 @@ class SuperAdminController extends Controller
         ]);
     }
 
+    public function updateProgress(Request $request, Client $client) {
+        // return $request;
+        $rules = $request->validate([
+            'name' => 'required',
+            'keterangan' => 'required',
+        ]);
+
+        Client::where('id', $client->id)->update($rules);
+
+        return redirect('/progress-desain')->with('success', 'Data Berhasil Diupdate!'); 
+    } 
 
 }

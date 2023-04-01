@@ -1,6 +1,13 @@
 @extends('template.home')
 
 @section('container')
+        {{-- alert --}}
+        @if (session()->has('success'))
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                {{ session('success') }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>   
+        @endif 
 
     {{-- carousel --}}
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
