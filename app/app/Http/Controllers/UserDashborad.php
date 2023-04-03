@@ -115,7 +115,7 @@ class UserDashborad extends Controller
             if($request->oldImage) {
                 Storage::delete($request->oldImage);
             }
-            $rules['image'] = $request->file('image')->store('foto-user');
+            $rules['image'] = $request->file('image')->store('foto-user'); 
         } 
 
         // User::where('id', $user->id)->update($rules);
